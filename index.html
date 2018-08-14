@@ -21,11 +21,123 @@
 				<form class="hero__calculator">
 					<div class="form-group">
 						<label for="fromNumber">外貨両替自動計算</label>
-						<input type="number" class="form-control" id="fromNumber">
+						<div class="hero__calculator-input input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">$</span>
+							</div>
+							<input type="text" class="form-control" aria-label="に">
+							<div class="input-group-append">
+								<span class="input-group-text">JPY</span>
+							</div>
+						</div>
+						<div class="squeezer">
+							<div class="hero__calculator-dropdown">
+								<div class="input-group">
+									<input type="text" class="form-control" aria-label="に" id="currency__from">
+									<div class="input-group-append">
+										<span class="input-group-text"><i class="fal fa-search"></i></span>
+									</div>
+								</div>
+								<div class="hero__calculator-currencies" id="currency__from__list">
+									<button class="flag__usd">USA - US Dollar (USD)</button>
+									<button class="flag__eur">Euro - (EUR)</button>
+									<button class="flag__gbp">United Kingdom - British Pound (GBP)</button>
+									<button class="flag__thb">Thailand - Thai Baht (THB)</button>
+									<button class="flag__sgd">Singapore - Singapore Dollar (SGD)</button>
+									<button class="flag__idr">Indonesia - Indonesian Rupiah (IDR)</button>
+									<button class="flag__jpy">Japan - Japanese Yen (JPY)</button>
+									<button class="flag__fjd">Fiji - Fijian Dollar (FJD)</button>
+									<button class="flag__cny">China - Chinese Renminbi (CNY)</button>
+									<button class="flag__nzd">New Zealand - New Zealand Dollar (NZD)</button>
+									<button class="flag__eur">Aland Islands - Euro (EUR)</button>
+									<button class="flag__eur">Andorra - Euro (EUR)</button>
+									<button class="flag__aud">Australia - Australian Dollar (AUD)</button>
+									<button class="flag__eur">Austria - Euro (EUR)</button>
+									<button class="flag__eur">Belgium - Euro (EUR)</button>
+									<button class="flag__brl">Brazil - Brazilian Real (BRL)</button>
+									<button class="flag__bnd">Brunei Darussalam - Brunei Dollar (BND)</button>
+									<button class="flag__cad">Canada - Canadian Dollar (CAD)</button>
+									<button class="flag__clp">Chile - Chilean Peso (CLP)</button>
+									<button class="flag__cny">China - Chinese Renminbi (CNY)</button>
+									<button class="flag__hrk">Croatia - Croatian Kuna (HRK)</button>
+									<button class="flag__eur">Cyprus - Euro (EUR)</button>
+									<button class="flag__czk">Czech Republic - Czech Koruna (CZK)</button>
+									<button class="flag__dkk">Denmark - Danish Krone (DKK)</button>
+									<button class="flag__eur">Estonia - Euro (EUR)</button>
+									<button class="flag__eur">Euro - (EUR)</button>
+									<button class="flag__fjd">Fiji - Fijian Dollar (FJD)</button>
+									<button class="flag__eur">Finland - Euro (EUR)</button>
+									<button class="flag__eur">France - Euro (EUR)</button>
+									<button class="flag__eur">French Guiana - Euro (EUR)</button>
+									<button class="flag__xpf">French Polynesia - CFP Franc (XPF)</button>
+									<button class="flag__eur">French Southern Territories - Euro (EUR)</button>
+									<button class="flag__eur">Germany - Euro (EUR)</button>
+									<button class="flag__eur">Greece - Euro (EUR)</button>
+									<button class="flag__eur">Guadeloupe - Euro (EUR)</button>
+									<button class="flag__eur">Holy See (Vatican City State) - Euro (EUR)</button>
+									<button class="flag__hkd">Hong Kong - Hong Kong Dollar (HKD)</button>
+									<button class="flag__huf">Hungary - Hungarian Forint (HUF)</button>
+									<button class="flag__idr">Indonesia - Indonesian Rupiah (IDR)</button>
+									<button class="flag__eur">Ireland - Euro (EUR)</button>
+									<button class="flag__ils">Israel - Israeli New Sheqel (ILS)</button>
+									<button class="flag__eur">Italy - Euro (EUR)</button>
+									<button class="flag__jpy">Japan - Japanese Yen (JPY)</button>
+									<button class="flag__kwd">Kuwait - Kuwaiti Dinar (KWD)</button>
+									<button class="flag__eur">Luxembourg - Euro (EUR)</button>
+									<button class="flag__myr">Malaysia - Malaysian Ringgit (MYR)</button>
+									<button class="flag__eur">Malta - Euro (EUR)</button>
+									<button class="flag__eur">Martinique - Euro (EUR)</button>
+									<button class="flag__mur">Mauritius - Mauritian Rupee (MUR)</button>
+									<button class="flag__eur">Mayotte - Euro (EUR)</button>
+									<button class="flag__mxn">Mexico - Mexican Peso (MXN)</button>
+									<button class="flag__eur">Monaco - Euro (EUR)</button>
+									<button class="flag__eur">Montenegro - Euro (EUR)</button>
+									<button class="flag__eur">Netherlands - Euro (EUR)</button>
+									<button class="flag__xpf">New Caledonia - CFP Franc (XPF)</button>
+									<button class="flag__nzd">New Zealand - New Zealand Dollar (NZD)</button>
+									<button class="flag__nok">Norway - Norwegian Krone (NOK)</button>
+									<button class="flag__omr">Oman - Omani Rial (OMR)</button>
+									<button class="flag__pgk">Papua New Guinea - Papua New Guinean Kina (PGK)</button>
+									<button class="flag__php">Philippines - Philippine Peso (PHP)</button>
+									<button class="flag__pln">Poland - Polish Zloty (PLN)</button>
+									<button class="flag__eur">Portugal - Euro (EUR)</button>
+									<button class="flag__rub">Russian Federation - Russian Ruble (RUB)</button>
+									<button class="flag__eur">Saint Barthélemy - Euro (EUR)</button>
+									<button class="flag__eur">Saint Martin (French part) - Euro (EUR)</button>
+									<button class="flag__wst">Samoa - Samoan Tala (WST)</button>
+									<button class="flag__eur">San Marino - Euro (EUR)</button>
+									<button class="flag__sar">Saudi Arabia - Saudi Riyal (SAR)</button>
+									<button class="flag__sgd">Singapore - Singapore Dollar (SGD)</button>
+									<button class="flag__eur">Slovakia - Euro (EUR)</button>
+									<button class="flag__eur">Slovenia - Euro (EUR)</button>
+									<button class="flag__sbd">Solomon Islands - Solomon Islands Dollar (SBD)</button>
+									<button class="flag__zar">South Africa - South African Rand (ZAR)</button>
+									<button class="flag__krw">South Korea - South Korean Won (KRW)</button>
+									<button class="flag__eur">Spain - Euro (EUR)</button>
+									<button class="flag__sek">Sweden - Swedish Krona (SEK)</button>
+									<button class="flag__chf">Switzerland - Swiss Franc (CHF)</button>
+									<button class="flag__twd">Taiwan - New Taiwan Dollar (TWD)</button>
+									<button class="flag__thb">Thailand - Thai Baht (THB)</button>
+									<button class="flag__top">Tonga - Paanga (TOP)</button>
+									<button class="flag__aed">United Arab Emirates - UAE Dirham (AED)</button>
+									<button class="flag__gbp">United Kingdom - British Pound (GBP)</button>
+									<button class="flag__usd">USA - US Dollar (USD)</button>
+									<button class="flag__vuv">Vanuatu - Vanuatu Vatu (VUV)</button>
+									<button class="flag__vnd">Vietnam - Vietnamese Dong (VND)</button>								</div>
+							</div>
+						</div>
 					</div>
 					<div class="form-group">
 						<label for="toNumber">に</label>
-						<input type="number" class="form-control" id="toNumber">
+						<div class="hero__calculator-input input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">$</span>
+							</div>
+							<input type="text" class="form-control" aria-label="に">
+							<div class="input-group-append">
+								<span class="input-group-text">USD</span>
+							</div>
+						</div>
 					</div>
 					<div class="form-group">
 						オンラインレート: 1 USD = 120JPY<br>
@@ -38,16 +150,17 @@
 				</form>
 				<div class="hero__credentials">
 					<div>
+						<i class="fa fa-yen-sign"></i>
 						<img src="assets/img/logo__canstar.png" alt=""><br>
 						<em>¡</em>写すよ北蓄写どぎ住決ホネ。
 					</div>
 					<div>
 						<img src="assets/img/logo__canstar.png" alt=""><br>
-						<em>¡</em>ルタスヌ基正ぽ真済ミソ議確みぼ化意スらごせ毎4部案雄く宇油ラなぎ。
+						<em>¡</em>ルタスヌ基正ぽ真済ミソ議確みぼ。
 					</div>
 					<div>
 						<img src="assets/img/logo__canstar.png" alt=""><br>
-						<em>¡</em>セス迎車敗つわ性断ソケルヲ率的カ響5案。
+						<em>¡</em>セス迎車敗つわ性断ソケルヲ率響5案。
 					</div>
 				</div>
 			</div>
@@ -408,6 +521,9 @@
 				京都西口店は、５月２３日リニューアルオープンいたしました。皆さまのご来店をスタッフ一同心よりお待ち申し上げております。店舗の詳細はこちらをご覧ください。
 			</dd>
 		</dl>
+		<div class="text-center">
+			<button class="btn btn-outline-crimson">詳細</button>
+		</div>
 	</div>
 </section>
 
@@ -424,6 +540,87 @@
 			if (!toLoad) document.body.className+=" animate";
 		};
 	}
+
+	var _inp = document.getElementById('currency__from');
+	console.log(_inp.id);
+
+	var unStrong = function(str) {
+		if (str.indexOf('<strong>') === -1) {
+			return str;
+		} else {
+			return str.split('<strong>').join('').split('</strong>').join('')
+		}
+	}
+
+	var autocomplete = function(inp) {
+		var currentFocus;
+		var _currencies = document.querySelectorAll('#' + _inp.id + '__list button');
+		inp.addEventListener('input', function(e) {
+			var b;
+			var i;
+			var val = this.value;
+			closeAllLists();
+			currentFocus = -1;
+			for (i = 0; i < _currencies.length; i++) {
+				var _currency = _currencies[i];
+				var text = unStrong(_currency.textContent);
+				var index = text.toUpperCase().indexOf(val.toUpperCase());
+				if (index > -1) {
+					_currency.removeAttribute('style');
+					var strong = text.split(val);
+					_currency.innerHTML = text.slice(0,index) + '<strong>' + text.slice(index,index + val.length) + '</strong>' + text.slice(index + val.length);
+					_currency.addEventListener('click', function(e) {
+						_inp.value = unStrong(this.textContent);
+						closeAllLists();
+					});
+				} else {
+					_currency.style.display = 'none';
+					_currency.textContent = text;
+				}
+			}
+		});
+		inp.addEventListener('keydown', function(e) {
+			var x = document.getElementById(this.id + 'autocomplete-list');
+			if (x) x = x.getElementsByTagName('div');
+			if (e.keyCode == 40) {
+				currentFocus++;
+				addActive(x);
+			} else if (e.keyCode == 38) {
+				//up
+				currentFocus--;
+				addActive(x);
+			} else if (e.keyCode == 13) {
+				e.preventDefault();
+				if (currentFocus > -1) {
+					if (x) x[currentFocus].click();
+				}
+			}
+		});
+		function addActive(x) {
+			if (!x) return false;
+			removeActive(x);
+			if (currentFocus >= x.length) currentFocus = 0;
+			if (currentFocus < 0) currentFocus = x.length - 1;
+			x[currentFocus].classList.add('autocomplete-active');
+		}
+		function removeActive(x) {
+			for (var i = 0; i < x.length; i++) {
+				x[i].classList.remove('autocomplete-active');
+			}
+		}
+		function closeAllLists(elmnt) {
+			var x = document.getElementsByClassName('autocomplete-items');
+			for (var i = 0; i < x.length; i++) {
+				if (elmnt != x[i] && elmnt != inp) {
+					x[i].parentNode.removeChild(x[i]);
+				}
+			}
+		}
+		document.addEventListener('click', function(e) {
+			closeAllLists(e.target);
+		});
+	}
+  	autocomplete(_inp);
 </script>
 <script type="text/javascript" src="assets/js/all.js"></script>
 

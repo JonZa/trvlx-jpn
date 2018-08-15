@@ -20,17 +20,182 @@
 			<div class="col-md-5 hero__forex">
 				<form class="hero__calculator">
 					<div class="form-group">
-						<label for="fromNumber">外貨両替自動計算</label>
-						<input type="number" class="form-control" id="fromNumber">
+						<label class="hero__calculator-label" for="fromNumber">外貨両替自動計算</label>
+						<div class="hero__calculator-input input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">$</span>
+							</div>
+							<input type="text" class="form-control" aria-label="に">
+							<div class="input-group-append">
+								<span class="input-group-text" id="currency__from__label">JPY</span>
+							</div>
+						</div>
+						<div class="squeezer" id="currency__from__list">
+							<div class="hero__calculator-dropdown">
+								<div class="input-group">
+									<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency__from">
+									<div class="input-group-append">
+										<span class="input-group-text"><i class="fal fa-search"></i></span>
+									</div>
+								</div>
+								<div class="hero__calculator-currencies">
+									<button value="EUR" class="flag__bg flag__bg--ax">Aland Islands (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--ad">Andorra (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--at">Austria (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--be">Belgium (EUR)</button>
+									<button value="BRL" class="flag__bg flag__bg--br">Brazil (BRL)</button>
+									<button value="BND" class="flag__bg flag__bg--bn">Brunei Darussalam (BND)</button>
+									<button value="CAD" class="flag__bg flag__bg--ca">Canada (CAD)</button>
+									<button value="CLP" class="flag__bg flag__bg--cl">Chile (CLP)</button>
+									<button value="CNY" class="flag__bg flag__bg--cn">China (CNY)</button>
+									<button value="EUR" class="flag__bg flag__bg--cy">Cyprus (EUR)</button>
+									<button value="CZK" class="flag__bg flag__bg--cz">Czech Republic (CZK)</button>
+									<button value="DKK" class="flag__bg flag__bg--dk">Denmark (DKK)</button>
+									<button value="EUR" class="flag__bg flag__bg--ee">Estonia (EUR)</button>
+									<button value="FJD" class="flag__bg flag__bg--fj">Fiji (FJD)</button>
+									<button value="EUR" class="flag__bg flag__bg--fi">Finland (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--fr">France (EUR)</button>
+									<button value="XPF" class="flag__bg flag__bg--pf">French Polynesia (XPF)</button>
+									<button value="EUR" class="flag__bg flag__bg--de">Germany (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--gr">Greece (EUR)</button>
+									<button value="HKD" class="flag__bg flag__bg--hk">Hong Kong (HKD)</button>
+									<button value="HUF" class="flag__bg flag__bg--hu">Hungary (HUF)</button>
+									<button value="IDR" class="flag__bg flag__bg--id">Indonesia (IDR)</button>
+									<button value="EUR" class="flag__bg flag__bg--ie">Ireland (EUR)</button>
+									<button value="ILS" class="flag__bg flag__bg--il">Israel (ILS)</button>
+									<button value="EUR" class="flag__bg flag__bg--it">Italy (EUR)</button>
+									<button value="JPY" class="flag__bg flag__bg--jp">Japan (JPY)</button>
+									<button value="KWD" class="flag__bg flag__bg--kw">Kuwait (KWD)</button>
+									<button value="EUR" class="flag__bg flag__bg--lu">Luxembourg (EUR)</button>
+									<button value="MYR" class="flag__bg flag__bg--my">Malaysia (MYR)</button>
+									<button value="EUR" class="flag__bg flag__bg--mt">Malta (EUR)</button>
+									<button value="MUR" class="flag__bg flag__bg--mu">Mauritius (MUR)</button>
+									<button value="MXN" class="flag__bg flag__bg--mx">Mexico (MXN)</button>
+									<button value="EUR" class="flag__bg flag__bg--mc">Monaco (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--me">Montenegro (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--nl">Netherlands (EUR)</button>
+									<button value="XPF" class="flag__bg flag__bg--nc">New Caledonia (XPF)</button>
+									<button value="NZD" class="flag__bg flag__bg--nz">New Zealand (NZD)</button>
+									<button value="NOK" class="flag__bg flag__bg--no">Norway (NOK)</button>
+									<button value="OMR" class="flag__bg flag__bg--om">Oman (OMR)</button>
+									<button value="PGK" class="flag__bg flag__bg--pg">Papua New Guinea (PGK)</button>
+									<button value="PHP" class="flag__bg flag__bg--ph">Philippines (PHP)</button>
+									<button value="PLN" class="flag__bg flag__bg--pl">Poland (PLN)</button>
+									<button value="EUR" class="flag__bg flag__bg--pt">Portugal (EUR)</button>
+									<button value="WST" class="flag__bg flag__bg--ws">Samoa (WST)</button>
+									<button value="EUR" class="flag__bg flag__bg--sm">San Marino (EUR)</button>
+									<button value="SAR" class="flag__bg flag__bg--sa">Saudi Arabia (SAR)</button>
+									<button value="SGD" class="flag__bg flag__bg--sg">Singapore (SGD)</button>
+									<button value="EUR" class="flag__bg flag__bg--sk">Slovakia (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--si">Slovenia (EUR)</button>
+									<button value="SBD" class="flag__bg flag__bg--sb">Solomon Islands (SBD)</button>
+									<button value="ZAR" class="flag__bg flag__bg--za">South Africa (ZAR)</button>
+									<button value="KRW" class="flag__bg flag__bg--kr">South Korea (KRW)</button>
+									<button value="EUR" class="flag__bg flag__bg--es">Spain (EUR)</button>
+									<button value="SEK" class="flag__bg flag__bg--se">Sweden (SEK)</button>
+									<button value="CHF" class="flag__bg flag__bg--ch">Switzerland (CHF)</button>
+									<button value="TWD" class="flag__bg flag__bg--tw">Taiwan (TWD)</button>
+									<button value="THB" class="flag__bg flag__bg--th">Thailand (THB)</button>
+									<button value="TOP" class="flag__bg flag__bg--to">Tonga (TOP)</button>
+									<button value="TRY" class="flag__bg flag__bg--tr">Turkey (TRY)</button>
+									<button value="AED" class="flag__bg flag__bg--ae">United Arab Emirates (AED)</button>
+									<button value="GBP" class="flag__bg flag__bg--gb">United Kingdom (GBP)</button>
+									<button value="USD" class="flag__bg flag__bg--us">USA (USD)</button>
+									<button value="VUV" class="flag__bg flag__bg--vu">Vanuatu (VUV)</button>
+									<button value="VND" class="flag__bg flag__bg--vn">Vietnam (VND)</button>								</div>
+							</div>
+						</div>
 					</div>
 					<div class="form-group">
-						<label for="toNumber">に</label>
-						<input type="number" class="form-control" id="toNumber">
+						<label class="hero__calculator-label" for="toNumber">に</label>
+						<div class="hero__calculator-input input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">$</span>
+							</div>
+							<input type="text" class="form-control" aria-label="に">
+							<div class="input-group-append">
+								<span class="input-group-text" id="currency__to__label">USD</span>
+							</div>
+						</div>
+						<div class="squeezer" id="currency__to__list">
+							<div class="hero__calculator-dropdown">
+								<div class="input-group">
+									<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency__to">
+									<div class="input-group-append">
+										<span class="input-group-text"><i class="fal fa-search"></i></span>
+									</div>
+								</div>
+								<div class="hero__calculator-currencies">
+									<button value="EUR" class="flag__bg flag__bg--ax">Aland Islands (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--ad">Andorra (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--at">Austria (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--be">Belgium (EUR)</button>
+									<button value="BRL" class="flag__bg flag__bg--br">Brazil (BRL)</button>
+									<button value="BND" class="flag__bg flag__bg--bn">Brunei Darussalam (BND)</button>
+									<button value="CAD" class="flag__bg flag__bg--ca">Canada (CAD)</button>
+									<button value="CLP" class="flag__bg flag__bg--cl">Chile (CLP)</button>
+									<button value="CNY" class="flag__bg flag__bg--cn">China (CNY)</button>
+									<button value="EUR" class="flag__bg flag__bg--cy">Cyprus (EUR)</button>
+									<button value="CZK" class="flag__bg flag__bg--cz">Czech Republic (CZK)</button>
+									<button value="DKK" class="flag__bg flag__bg--dk">Denmark (DKK)</button>
+									<button value="EUR" class="flag__bg flag__bg--ee">Estonia (EUR)</button>
+									<button value="FJD" class="flag__bg flag__bg--fj">Fiji (FJD)</button>
+									<button value="EUR" class="flag__bg flag__bg--fi">Finland (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--fr">France (EUR)</button>
+									<button value="XPF" class="flag__bg flag__bg--pf">French Polynesia (XPF)</button>
+									<button value="EUR" class="flag__bg flag__bg--de">Germany (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--gr">Greece (EUR)</button>
+									<button value="HKD" class="flag__bg flag__bg--hk">Hong Kong (HKD)</button>
+									<button value="HUF" class="flag__bg flag__bg--hu">Hungary (HUF)</button>
+									<button value="IDR" class="flag__bg flag__bg--id">Indonesia (IDR)</button>
+									<button value="EUR" class="flag__bg flag__bg--ie">Ireland (EUR)</button>
+									<button value="ILS" class="flag__bg flag__bg--il">Israel (ILS)</button>
+									<button value="EUR" class="flag__bg flag__bg--it">Italy (EUR)</button>
+									<button value="JPY" class="flag__bg flag__bg--jp">Japan (JPY)</button>
+									<button value="KWD" class="flag__bg flag__bg--kw">Kuwait (KWD)</button>
+									<button value="EUR" class="flag__bg flag__bg--lu">Luxembourg (EUR)</button>
+									<button value="MYR" class="flag__bg flag__bg--my">Malaysia (MYR)</button>
+									<button value="EUR" class="flag__bg flag__bg--mt">Malta (EUR)</button>
+									<button value="MUR" class="flag__bg flag__bg--mu">Mauritius (MUR)</button>
+									<button value="MXN" class="flag__bg flag__bg--mx">Mexico (MXN)</button>
+									<button value="EUR" class="flag__bg flag__bg--mc">Monaco (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--me">Montenegro (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--nl">Netherlands (EUR)</button>
+									<button value="XPF" class="flag__bg flag__bg--nc">New Caledonia (XPF)</button>
+									<button value="NZD" class="flag__bg flag__bg--nz">New Zealand (NZD)</button>
+									<button value="NOK" class="flag__bg flag__bg--no">Norway (NOK)</button>
+									<button value="OMR" class="flag__bg flag__bg--om">Oman (OMR)</button>
+									<button value="PGK" class="flag__bg flag__bg--pg">Papua New Guinea (PGK)</button>
+									<button value="PHP" class="flag__bg flag__bg--ph">Philippines (PHP)</button>
+									<button value="PLN" class="flag__bg flag__bg--pl">Poland (PLN)</button>
+									<button value="EUR" class="flag__bg flag__bg--pt">Portugal (EUR)</button>
+									<button value="WST" class="flag__bg flag__bg--ws">Samoa (WST)</button>
+									<button value="EUR" class="flag__bg flag__bg--sm">San Marino (EUR)</button>
+									<button value="SAR" class="flag__bg flag__bg--sa">Saudi Arabia (SAR)</button>
+									<button value="SGD" class="flag__bg flag__bg--sg">Singapore (SGD)</button>
+									<button value="EUR" class="flag__bg flag__bg--sk">Slovakia (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--si">Slovenia (EUR)</button>
+									<button value="SBD" class="flag__bg flag__bg--sb">Solomon Islands (SBD)</button>
+									<button value="ZAR" class="flag__bg flag__bg--za">South Africa (ZAR)</button>
+									<button value="KRW" class="flag__bg flag__bg--kr">South Korea (KRW)</button>
+									<button value="EUR" class="flag__bg flag__bg--es">Spain (EUR)</button>
+									<button value="SEK" class="flag__bg flag__bg--se">Sweden (SEK)</button>
+									<button value="CHF" class="flag__bg flag__bg--ch">Switzerland (CHF)</button>
+									<button value="TWD" class="flag__bg flag__bg--tw">Taiwan (TWD)</button>
+									<button value="THB" class="flag__bg flag__bg--th">Thailand (THB)</button>
+									<button value="TOP" class="flag__bg flag__bg--to">Tonga (TOP)</button>
+									<button value="TRY" class="flag__bg flag__bg--tr">Turkey (TRY)</button>
+									<button value="AED" class="flag__bg flag__bg--ae">United Arab Emirates (AED)</button>
+									<button value="GBP" class="flag__bg flag__bg--gb">United Kingdom (GBP)</button>
+									<button value="USD" class="flag__bg flag__bg--us">USA (USD)</button>
+									<button value="VUV" class="flag__bg flag__bg--vu">Vanuatu (VUV)</button>
+									<button value="VND" class="flag__bg flag__bg--vn">Vietnam (VND)</button>								</div>
+							</div>
+						</div>
 					</div>
 					<div class="form-group">
 						オンラインレート: 1 USD = 120JPY<br>
-						<small>両替レート最終更新日 2018年 7月 20日 金曜日<br>
-						10:34:23 日本標準時</small>
+						<small>両替レート最終更新日 2018年 7月 20日 金曜日 10:34:23 日本標準時</small>
 					</div>
 					<button type="submit" class="btn btn-crimson btn-block btn-lg">
 						購入手続きを行う
@@ -38,16 +203,17 @@
 				</form>
 				<div class="hero__credentials">
 					<div>
+						<i class="fa fa-yen-sign"></i>
 						<img src="assets/img/logo__canstar.png" alt=""><br>
 						<em>¡</em>写すよ北蓄写どぎ住決ホネ。
 					</div>
 					<div>
 						<img src="assets/img/logo__canstar.png" alt=""><br>
-						<em>¡</em>ルタスヌ基正ぽ真済ミソ議確みぼ化意スらごせ毎4部案雄く宇油ラなぎ。
+						<em>¡</em>ルタスヌ基正ぽ真済ミソ議確みぼ。
 					</div>
 					<div>
 						<img src="assets/img/logo__canstar.png" alt=""><br>
-						<em>¡</em>セス迎車敗つわ性断ソケルヲ率的カ響5案。
+						<em>¡</em>セス迎車敗つわ性断ソケルヲ率響5案。
 					</div>
 				</div>
 			</div>
@@ -154,104 +320,374 @@
 		<div class="ticker__tape lang__eng">
 			<div class="owl-carousel owl-theme">
 				<div class="owl-item__slide">
-					<img src="assets/img/flags/aud.png" alt="" class="ticker__flag">
-					<small>USD</small><br>
+					<img src="assets/img/flags/AD.png" alt="" class="ticker__flag">
+					<small>AD</small><br>
 					0.0090
 				</div>
 				<div class="owl-item__slide">
-					<img src="assets/img/flags/eur.png" alt="" class="ticker__flag">
-					<small>EURO</small><br>
-					0.0077
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/gbp.png" alt="" class="ticker__flag">
-					<small>GBP</small><br>
-					0.0068
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/jpn.png" alt="" class="ticker__flag">
-					<small>CAD</small><br>
-					8.4862
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/usd.png" alt="" class="ticker__flag">
-					<small>AUD</small><br>
-					0.0123
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/aud.png" alt="" class="ticker__flag">
-					<small>DIT</small><br>
+					<img src="assets/img/flags/AE.png" alt="" class="ticker__flag">
+					<small>AE</small><br>
 					0.0090
 				</div>
 				<div class="owl-item__slide">
-					<img src="assets/img/flags/gbp.png" alt="" class="ticker__flag">
-					<small>IMI</small><br>
-					0.0068
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/eur.png" alt="" class="ticker__flag">
-					<small>REM</small><br>
-					0.0077
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/cad.png" alt="" class="ticker__flag">
-					<small>QUE</small><br>
-					10.456
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/jpn.png" alt="" class="ticker__flag">
-					<small>TES</small><br>
-					8.4862
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/gbp.png" alt="" class="ticker__flag">
-					<small>IUS</small><br>
-					0.0068
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/usd.png" alt="" class="ticker__flag">
-					<small>STO</small><br>
-					0.0123
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/cad.png" alt="" class="ticker__flag">
-					<small>IAM</small><br>
-					10.456
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/aud.png" alt="" class="ticker__flag">
-					<small>NDI</small><br>
+					<img src="assets/img/flags/AT.png" alt="" class="ticker__flag">
+					<small>AT</small><br>
 					0.0090
 				</div>
 				<div class="owl-item__slide">
-					<img src="assets/img/flags/gbp.png" alt="" class="ticker__flag">
-					<small>UNT</small><br>
-					0.0068
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/jpn.png" alt="" class="ticker__flag">
-					<small>DIS</small><br>
-					8.4862
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/usd.png" alt="" class="ticker__flag">
-					<small>VIT</small><br>
-					0.0123
-				</div>
-				<div class="owl-item__slide">
-					<img src="assets/img/flags/aud.png" alt="" class="ticker__flag">
-					<small>UND</small><br>
+					<img src="assets/img/flags/AU.png" alt="" class="ticker__flag">
+					<small>AU</small><br>
 					0.0090
 				</div>
 				<div class="owl-item__slide">
-					<img src="assets/img/flags/cad.png" alt="" class="ticker__flag">
-					<small>POR</small><br>
-					10.456
+					<img src="assets/img/flags/AX.png" alt="" class="ticker__flag">
+					<small>AX</small><br>
+					0.0090
 				</div>
 				<div class="owl-item__slide">
-					<img src="assets/img/flags/gbp.png" alt="" class="ticker__flag">
-					<small>EAQ</small><br>
-					0.0068
+					<img src="assets/img/flags/BE.png" alt="" class="ticker__flag">
+					<small>BE</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/BL.png" alt="" class="ticker__flag">
+					<small>BL</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/BN.png" alt="" class="ticker__flag">
+					<small>BN</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/BR.png" alt="" class="ticker__flag">
+					<small>BR</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/CA.png" alt="" class="ticker__flag">
+					<small>CA</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/CH.png" alt="" class="ticker__flag">
+					<small>CH</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/CL.png" alt="" class="ticker__flag">
+					<small>CL</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/CN.png" alt="" class="ticker__flag">
+					<small>CN</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/CY.png" alt="" class="ticker__flag">
+					<small>CY</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/CZ.png" alt="" class="ticker__flag">
+					<small>CZ</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/DE.png" alt="" class="ticker__flag">
+					<small>DE</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/DK.png" alt="" class="ticker__flag">
+					<small>DK</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/EE.png" alt="" class="ticker__flag">
+					<small>EE</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/ES.png" alt="" class="ticker__flag">
+					<small>ES</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/EU.png" alt="" class="ticker__flag">
+					<small>EU</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/FI.png" alt="" class="ticker__flag">
+					<small>FI</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/FJ.png" alt="" class="ticker__flag">
+					<small>FJ</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/FR.png" alt="" class="ticker__flag">
+					<small>FR</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/GB.png" alt="" class="ticker__flag">
+					<small>GB</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/GF.png" alt="" class="ticker__flag">
+					<small>GF</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/GP.png" alt="" class="ticker__flag">
+					<small>GP</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/GR.png" alt="" class="ticker__flag">
+					<small>GR</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/HK.png" alt="" class="ticker__flag">
+					<small>HK</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/HU.png" alt="" class="ticker__flag">
+					<small>HU</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/ID.png" alt="" class="ticker__flag">
+					<small>ID</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/IE.png" alt="" class="ticker__flag">
+					<small>IE</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/IL.png" alt="" class="ticker__flag">
+					<small>IL</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/IT.png" alt="" class="ticker__flag">
+					<small>IT</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/JP.png" alt="" class="ticker__flag">
+					<small>JP</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/KR.png" alt="" class="ticker__flag">
+					<small>KR</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/KW.png" alt="" class="ticker__flag">
+					<small>KW</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/LU.png" alt="" class="ticker__flag">
+					<small>LU</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/MC.png" alt="" class="ticker__flag">
+					<small>MC</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/ME.png" alt="" class="ticker__flag">
+					<small>ME</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/MF.png" alt="" class="ticker__flag">
+					<small>MF</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/MQ.png" alt="" class="ticker__flag">
+					<small>MQ</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/MT.png" alt="" class="ticker__flag">
+					<small>MT</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/MU.png" alt="" class="ticker__flag">
+					<small>MU</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/MX.png" alt="" class="ticker__flag">
+					<small>MX</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/MY.png" alt="" class="ticker__flag">
+					<small>MY</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/NC.png" alt="" class="ticker__flag">
+					<small>NC</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/NL.png" alt="" class="ticker__flag">
+					<small>NL</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/NO.png" alt="" class="ticker__flag">
+					<small>NO</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/NZ.png" alt="" class="ticker__flag">
+					<small>NZ</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/OM.png" alt="" class="ticker__flag">
+					<small>OM</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/PF.png" alt="" class="ticker__flag">
+					<small>PF</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/PG.png" alt="" class="ticker__flag">
+					<small>PG</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/PH.png" alt="" class="ticker__flag">
+					<small>PH</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/PL.png" alt="" class="ticker__flag">
+					<small>PL</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/PT.png" alt="" class="ticker__flag">
+					<small>PT</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/SA.png" alt="" class="ticker__flag">
+					<small>SA</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/SB.png" alt="" class="ticker__flag">
+					<small>SB</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/SE.png" alt="" class="ticker__flag">
+					<small>SE</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/SG.png" alt="" class="ticker__flag">
+					<small>SG</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/SI.png" alt="" class="ticker__flag">
+					<small>SI</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/SK.png" alt="" class="ticker__flag">
+					<small>SK</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/SM.png" alt="" class="ticker__flag">
+					<small>SM</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/TF.png" alt="" class="ticker__flag">
+					<small>TF</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/TH.png" alt="" class="ticker__flag">
+					<small>TH</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/TO.png" alt="" class="ticker__flag">
+					<small>TO</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/TR.png" alt="" class="ticker__flag">
+					<small>TR</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/TW.png" alt="" class="ticker__flag">
+					<small>TW</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/US.png" alt="" class="ticker__flag">
+					<small>US</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/VA.png" alt="" class="ticker__flag">
+					<small>VA</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/VN.png" alt="" class="ticker__flag">
+					<small>VN</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/VU.png" alt="" class="ticker__flag">
+					<small>VU</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/WS.png" alt="" class="ticker__flag">
+					<small>WS</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/YT.png" alt="" class="ticker__flag">
+					<small>YT</small><br>
+					0.0090
+				</div>
+				<div class="owl-item__slide">
+					<img src="assets/img/flags/ZA.png" alt="" class="ticker__flag">
+					<small>ZA</small><br>
+					0.0090
 				</div>
 			</div>
 		</div>
@@ -317,7 +753,9 @@
 		<div class="row">
 			<div class="col-6 col-md-3">
 				<div class="card">
-					<img class="card-img-top" src="assets/img/card__stock-1.jpg" alt="Card image cap">
+					<div class="card-img-top">
+						<img class="" src="assets/img/card__stock-1.jpg" alt="Card image cap">
+					</div>
 					<div class="card-body">
 						<h3 class="card-title">航空会社のマイルをためる</h3>
 						<p class="card-text">トラベレックスでは、外貨購入金額に応じて全日本空輸、日本航空のマイルを付与いたします</p>
@@ -329,7 +767,9 @@
 			</div>
 			<div class="col-6 col-md-3">
 				<div class="card">
-					<img class="card-img-top" src="assets/img/card__stock-2.jpg" alt="Card image cap">
+					<div class="card-img-top">
+						<img class="" src="assets/img/card__stock-2.jpg" alt="Card image cap">
+					</div>
 					<div class="card-body">
 						<h3 class="card-title">トラベレックスリワードプログラム</h3>
 						<p class="card-text">年会費・入会金無料！即日レート割引を適用いたします。</p>
@@ -341,7 +781,9 @@
 			</div>
 			<div class="col-6 col-md-3">
 				<div class="card">
-					<img class="card-img-top" src="assets/img/card__stock-3.jpg" alt="Card image cap">
+					<div class="card-img-top">
+						<img class="" src="assets/img/card__stock-3.jpg" alt="Card image cap">
+					</div>
 					<div class="card-body">
 						<h3 class="card-title">外貨買取優遇レートサービス</h3>
 						<p class="card-text">渡航先で使い残した外貨を優遇レートでお買取いたします。ただし渡航前外貨購入時に所定の費用を申し受けます</p>
@@ -353,7 +795,9 @@
 			</div>
 			<div class="col-6 col-md-3">
 				<div class="card">
-					<img class="card-img-top" src="assets/img/card__stock-4.jpg" alt="Card image cap">
+					<div class="card-img-top">
+						<img class="" src="assets/img/card__stock-4.jpg" alt="Card image cap">
+					</div>
 					<div class="card-body">
 						<h3 class="card-title">海外専用プリペイドカード「キャッシュパスポート」</h3>
 						<p class="card-text">渡航先でご利用になる金額をプリペイドカードに入金いただき、現地でお支払いに、ＡＴＭからのお引き出しにご利用いただけます。</p>
@@ -400,6 +844,9 @@
 				京都西口店は、５月２３日リニューアルオープンいたしました。皆さまのご来店をスタッフ一同心よりお待ち申し上げております。店舗の詳細はこちらをご覧ください。
 			</dd>
 		</dl>
+		<div class="text-center">
+			<button class="btn btn-outline-crimson">詳細</button>
+		</div>
 	</div>
 </section>
 
@@ -416,6 +863,102 @@
 			if (!toLoad) document.body.className+=" animate";
 		};
 	}
+
+	var currencyDropdown = {
+		shownList: 0,
+		activeClassName: 'active',
+		hiddenClassName: 'hidden',
+		start: function() {
+			// console.log('currencyDropdown.start');
+			currencyDropdown.setup('from', 'to');
+			currencyDropdown.setup('to', 'from');
+			document.addEventListener('click', currencyDropdown.hideLists);
+		},
+		setup: function(inputID, otherInputID) {
+			// console.log('currencyDropdown.setup');
+			var $_input = document.getElementById('currency__' + inputID);
+			var $_label = document.getElementById('currency__' + inputID + '__label');
+			var $_list = document.getElementById('currency__' + inputID + '__list');
+			var $_otherList = document.getElementById('currency__' + otherInputID + '__list');
+			var $_currencies = $_list.querySelectorAll('button');
+			for (var i = 0; i < $_currencies.length; i++) {
+				$_currencies[i].addEventListener('click', function(e) {
+					e.preventDefault();
+					currencyDropdown.complete(this, $_label);
+					currencyDropdown.hideList($_list);
+				});
+			}
+			$_label.addEventListener('click', function(e) {
+				currencyDropdown.showList($_list, $_otherList);
+			});
+			$_input.addEventListener('input', function() {
+				currencyDropdown.filter($_input, $_currencies);
+			});
+		},
+		toggleList: function($_list, $_otherList) {
+			// console.log('currencyDropdown.toggleList');
+			currencyDropdown.hideList($_otherList);
+			currencyDropdown.showList($_list);
+		},
+		hideLists: function(e) {
+			// console.log('currencyDropdown.hideLists');
+			if (currencyDropdown.shownList) {
+				if (!currencyDropdown.shownList.closest('.form-group').contains(e.target)) {
+					currencyDropdown.hideList(currencyDropdown.shownList);
+				}
+			}
+		},
+		hideList: function($_list) {
+			// console.log('currencyDropdown.hideList');
+			currencyDropdown.shownList = 0;
+			$_list.classList.remove(currencyDropdown.activeClassName);
+		},
+		showList: function($_list,$_otherList) {
+			// console.log('currencyDropdown.showList');
+			currencyDropdown.hideList($_otherList);
+			currencyDropdown.shownList = $_list;
+			$_list.classList.add(currencyDropdown.activeClassName);
+		},
+		complete: function($_currency, $_label) {
+			// console.log('currencyDropdown.complete');
+			var inputEvent = new Event('input');
+			$_label.textContent = $_currency.value;
+		},
+		filter: function($_input, $_currencies) {
+			// console.log('currencyDropdown.filter');
+			var value = $_input.value;
+			for (var i = 0; i < $_currencies.length; i++) {
+				var $_currency = $_currencies[i];
+				var string = currencyDropdown.unStrong($_currency.textContent);
+				var index = string.toUpperCase().indexOf(value.toUpperCase());
+				if (index > -1) {
+					$_currency.classList.remove(currencyDropdown.hiddenClassName);
+					$_currency.innerHTML = currencyDropdown.strong(string, value, index);
+				} else {
+					$_currency.classList.add(currencyDropdown.hiddenClassName);
+					$_currency.textContent = string;
+				}
+			}
+		},
+		strong: function(string, value, index) {
+			// console.log('currencyDropdown.strong');
+			return string.slice(0, index) + '<strong>' + string.slice(index, index + value.length) + '</strong>' + string.slice(index + value.length);
+		},
+		unStrong: function(string) {
+			// console.log('currencyDropdown.unStrong');
+			if (string.indexOf('<strong>') === -1) {
+				return string;
+			} else {
+				return string
+					.split('<strong>')
+					.join('')
+					.split('</strong>')
+					.join('');
+			}
+		}
+	};
+	currencyDropdown.start();
+
 </script>
 <script type="text/javascript" src="assets/js/all.js"></script>
 

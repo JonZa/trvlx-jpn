@@ -20,7 +20,7 @@
 			<div class="col-md-5 hero__forex">
 				<form class="hero__calculator">
 					<div class="form-group">
-						<label for="fromNumber">外貨両替自動計算</label>
+						<label class="hero__calculator-label" for="fromNumber">外貨両替自動計算</label>
 						<div class="hero__calculator-input input-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text">$</span>
@@ -39,85 +39,75 @@
 									</div>
 								</div>
 								<div class="hero__calculator-currencies">
-									<button value="USD" class="flag__usd">USA - US Dollar (USD)</button>
-									<button value="EUR" class="flag__eur">Euro - (EUR)</button>
-									<button value="GBP" class="flag__gbp">United Kingdom - British Pound (GBP)</button>
-									<button value="SGD" class="flag__sgd">Singapore - Singapore Dollar (SGD)</button>
-									<button value="IDR" class="flag__idr">Indonesia - Indonesian Rupiah (IDR)</button>
-									<button value="JPY" class="flag__jpy">Japan - Japanese Yen (JPY)</button>
-									<button value="FJD" class="flag__fjd">Fiji - Fijian Dollar (FJD)</button>
-									<button value="CNY" class="flag__cny">China - Chinese Renminbi (CNY)</button>
-									<button value="NZD" class="flag__nzd">New Zealand - New Zealand Dollar (NZD)</button>
-									<button value="EUR" class="flag__eur">Aland Islands - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Andorra - Euro (EUR)</button>
-									<button value="AUD" class="flag__aud">Australia - Australian Dollar (AUD)</button>
-									<button value="EUR" class="flag__eur">Austria - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Belgium - Euro (EUR)</button>
-									<button value="BRL" class="flag__brl">Brazil - Brazilian Real (BRL)</button>
-									<button value="BND" class="flag__bnd">Brunei Darussalam - Brunei Dollar (BND)</button>
-									<button value="CAD" class="flag__cad">Canada - Canadian Dollar (CAD)</button>
-									<button value="CLP" class="flag__clp">Chile - Chilean Peso (CLP)</button>
-									<button value="HRK" class="flag__hrk">Croatia - Croatian Kuna (HRK)</button>
-									<button value="EUR" class="flag__eur">Cyprus - Euro (EUR)</button>
-									<button value="CZK" class="flag__czk">Czech Republic - Czech Koruna (CZK)</button>
-									<button value="DKK" class="flag__dkk">Denmark - Danish Krone (DKK)</button>
-									<button value="EUR" class="flag__eur">Estonia - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Finland - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">France - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">French Guiana - Euro (EUR)</button>
-									<button value="XPF" class="flag__xpf">French Polynesia - CFP Franc (XPF)</button>
-									<button value="EUR" class="flag__eur">French Southern Territories - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Germany - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Greece - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Guadeloupe - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Holy See (Vatican City State) - Euro (EUR)</button>
-									<button value="HKD" class="flag__hkd">Hong Kong - Hong Kong Dollar (HKD)</button>
-									<button value="HUF" class="flag__huf">Hungary - Hungarian Forint (HUF)</button>
-									<button value="EUR" class="flag__eur">Ireland - Euro (EUR)</button>
-									<button value="ILS" class="flag__ils">Israel - Israeli New Sheqel (ILS)</button>
-									<button value="EUR" class="flag__eur">Italy - Euro (EUR)</button>
-									<button value="KWD" class="flag__kwd">Kuwait - Kuwaiti Dinar (KWD)</button>
-									<button value="EUR" class="flag__eur">Luxembourg - Euro (EUR)</button>
-									<button value="MYR" class="flag__myr">Malaysia - Malaysian Ringgit (MYR)</button>
-									<button value="EUR" class="flag__eur">Malta - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Martinique - Euro (EUR)</button>
-									<button value="MUR" class="flag__mur">Mauritius - Mauritian Rupee (MUR)</button>
-									<button value="EUR" class="flag__eur">Mayotte - Euro (EUR)</button>
-									<button value="MXN" class="flag__mxn">Mexico - Mexican Peso (MXN)</button>
-									<button value="EUR" class="flag__eur">Monaco - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Montenegro - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Netherlands - Euro (EUR)</button>
-									<button value="XPF" class="flag__xpf">New Caledonia - CFP Franc (XPF)</button>
-									<button value="NOK" class="flag__nok">Norway - Norwegian Krone (NOK)</button>
-									<button value="OMR" class="flag__omr">Oman - Omani Rial (OMR)</button>
-									<button value="PGK" class="flag__pgk">Papua New Guinea - Papua New Guinean Kina (PGK)</button>
-									<button value="PHP" class="flag__php">Philippines - Philippine Peso (PHP)</button>
-									<button value="PLN" class="flag__pln">Poland - Polish Zloty (PLN)</button>
-									<button value="EUR" class="flag__eur">Portugal - Euro (EUR)</button>
-									<button value="RUB" class="flag__rub">Russian Federation - Russian Ruble (RUB)</button>
-									<button value="EUR" class="flag__eur">Saint Barthélemy - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Saint Martin (French part) - Euro (EUR)</button>
-									<button value="WST" class="flag__wst">Samoa - Samoan Tala (WST)</button>
-									<button value="EUR" class="flag__eur">San Marino - Euro (EUR)</button>
-									<button value="SAR" class="flag__sar">Saudi Arabia - Saudi Riyal (SAR)</button>
-									<button value="EUR" class="flag__eur">Slovenia - Euro (EUR)</button>
-									<button value="SBD" class="flag__sbd">Solomon Islands - Solomon Islands Dollar (SBD)</button>
-									<button value="ZAR" class="flag__zar">South Africa - South African Rand (ZAR)</button>
-									<button value="KRW" class="flag__krw">South Korea - South Korean Won (KRW)</button>
-									<button value="EUR" class="flag__eur">Spain - Euro (EUR)</button>
-									<button value="SEK" class="flag__sek">Sweden - Swedish Krona (SEK)</button>
-									<button value="CHF" class="flag__chf">Switzerland - Swiss Franc (CHF)</button>
-									<button value="TWD" class="flag__twd">Taiwan - New Taiwan Dollar (TWD)</button>
-									<button value="THB" class="flag__thb">Thailand - Thai Baht (THB)</button>
-									<button value="TOP" class="flag__top">Tonga - Paanga (TOP)</button>
-									<button value="AED" class="flag__aed">United Arab Emirates - UAE Dirham (AED)</button>
-									<button value="VUV" class="flag__vuv">Vanuatu - Vanuatu Vatu (VUV)</button>
-									<button value="VND" class="flag__vnd">Vietnam - Vietnamese Dong (VND)</button>								</div>
+									<button value="EUR" class="flag__bg flag__bg--ax">Aland Islands (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--ad">Andorra (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--at">Austria (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--be">Belgium (EUR)</button>
+									<button value="BRL" class="flag__bg flag__bg--br">Brazil (BRL)</button>
+									<button value="BND" class="flag__bg flag__bg--bn">Brunei Darussalam (BND)</button>
+									<button value="CAD" class="flag__bg flag__bg--ca">Canada (CAD)</button>
+									<button value="CLP" class="flag__bg flag__bg--cl">Chile (CLP)</button>
+									<button value="CNY" class="flag__bg flag__bg--cn">China (CNY)</button>
+									<button value="EUR" class="flag__bg flag__bg--cy">Cyprus (EUR)</button>
+									<button value="CZK" class="flag__bg flag__bg--cz">Czech Republic (CZK)</button>
+									<button value="DKK" class="flag__bg flag__bg--dk">Denmark (DKK)</button>
+									<button value="EUR" class="flag__bg flag__bg--ee">Estonia (EUR)</button>
+									<button value="FJD" class="flag__bg flag__bg--fj">Fiji (FJD)</button>
+									<button value="EUR" class="flag__bg flag__bg--fi">Finland (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--fr">France (EUR)</button>
+									<button value="XPF" class="flag__bg flag__bg--pf">French Polynesia (XPF)</button>
+									<button value="EUR" class="flag__bg flag__bg--de">Germany (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--gr">Greece (EUR)</button>
+									<button value="HKD" class="flag__bg flag__bg--hk">Hong Kong (HKD)</button>
+									<button value="HUF" class="flag__bg flag__bg--hu">Hungary (HUF)</button>
+									<button value="IDR" class="flag__bg flag__bg--id">Indonesia (IDR)</button>
+									<button value="EUR" class="flag__bg flag__bg--ie">Ireland (EUR)</button>
+									<button value="ILS" class="flag__bg flag__bg--il">Israel (ILS)</button>
+									<button value="EUR" class="flag__bg flag__bg--it">Italy (EUR)</button>
+									<button value="JPY" class="flag__bg flag__bg--jp">Japan (JPY)</button>
+									<button value="KWD" class="flag__bg flag__bg--kw">Kuwait (KWD)</button>
+									<button value="EUR" class="flag__bg flag__bg--lu">Luxembourg (EUR)</button>
+									<button value="MYR" class="flag__bg flag__bg--my">Malaysia (MYR)</button>
+									<button value="EUR" class="flag__bg flag__bg--mt">Malta (EUR)</button>
+									<button value="MUR" class="flag__bg flag__bg--mu">Mauritius (MUR)</button>
+									<button value="MXN" class="flag__bg flag__bg--mx">Mexico (MXN)</button>
+									<button value="EUR" class="flag__bg flag__bg--mc">Monaco (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--me">Montenegro (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--nl">Netherlands (EUR)</button>
+									<button value="XPF" class="flag__bg flag__bg--nc">New Caledonia (XPF)</button>
+									<button value="NZD" class="flag__bg flag__bg--nz">New Zealand (NZD)</button>
+									<button value="NOK" class="flag__bg flag__bg--no">Norway (NOK)</button>
+									<button value="OMR" class="flag__bg flag__bg--om">Oman (OMR)</button>
+									<button value="PGK" class="flag__bg flag__bg--pg">Papua New Guinea (PGK)</button>
+									<button value="PHP" class="flag__bg flag__bg--ph">Philippines (PHP)</button>
+									<button value="PLN" class="flag__bg flag__bg--pl">Poland (PLN)</button>
+									<button value="EUR" class="flag__bg flag__bg--pt">Portugal (EUR)</button>
+									<button value="WST" class="flag__bg flag__bg--ws">Samoa (WST)</button>
+									<button value="EUR" class="flag__bg flag__bg--sm">San Marino (EUR)</button>
+									<button value="SAR" class="flag__bg flag__bg--sa">Saudi Arabia (SAR)</button>
+									<button value="SGD" class="flag__bg flag__bg--sg">Singapore (SGD)</button>
+									<button value="EUR" class="flag__bg flag__bg--sk">Slovakia (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--si">Slovenia (EUR)</button>
+									<button value="SBD" class="flag__bg flag__bg--sb">Solomon Islands (SBD)</button>
+									<button value="ZAR" class="flag__bg flag__bg--za">South Africa (ZAR)</button>
+									<button value="KRW" class="flag__bg flag__bg--kr">South Korea (KRW)</button>
+									<button value="EUR" class="flag__bg flag__bg--es">Spain (EUR)</button>
+									<button value="SEK" class="flag__bg flag__bg--se">Sweden (SEK)</button>
+									<button value="CHF" class="flag__bg flag__bg--ch">Switzerland (CHF)</button>
+									<button value="TWD" class="flag__bg flag__bg--tw">Taiwan (TWD)</button>
+									<button value="THB" class="flag__bg flag__bg--th">Thailand (THB)</button>
+									<button value="TOP" class="flag__bg flag__bg--to">Tonga (TOP)</button>
+									<button value="TRY" class="flag__bg flag__bg--tr">Turkey (TRY)</button>
+									<button value="AED" class="flag__bg flag__bg--ae">United Arab Emirates (AED)</button>
+									<button value="GBP" class="flag__bg flag__bg--gb">United Kingdom (GBP)</button>
+									<button value="USD" class="flag__bg flag__bg--us">USA (USD)</button>
+									<button value="VUV" class="flag__bg flag__bg--vu">Vanuatu (VUV)</button>
+									<button value="VND" class="flag__bg flag__bg--vn">Vietnam (VND)</button>								</div>
 							</div>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="toNumber">に</label>
+						<label class="hero__calculator-label" for="toNumber">に</label>
 						<div class="hero__calculator-input input-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text">$</span>
@@ -136,87 +126,76 @@
 									</div>
 								</div>
 								<div class="hero__calculator-currencies">
-									<button value="USD" class="flag__usd">USA - US Dollar (USD)</button>
-									<button value="EUR" class="flag__eur">Euro - (EUR)</button>
-									<button value="GBP" class="flag__gbp">United Kingdom - British Pound (GBP)</button>
-									<button value="SGD" class="flag__sgd">Singapore - Singapore Dollar (SGD)</button>
-									<button value="IDR" class="flag__idr">Indonesia - Indonesian Rupiah (IDR)</button>
-									<button value="JPY" class="flag__jpy">Japan - Japanese Yen (JPY)</button>
-									<button value="FJD" class="flag__fjd">Fiji - Fijian Dollar (FJD)</button>
-									<button value="CNY" class="flag__cny">China - Chinese Renminbi (CNY)</button>
-									<button value="NZD" class="flag__nzd">New Zealand - New Zealand Dollar (NZD)</button>
-									<button value="EUR" class="flag__eur">Aland Islands - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Andorra - Euro (EUR)</button>
-									<button value="AUD" class="flag__aud">Australia - Australian Dollar (AUD)</button>
-									<button value="EUR" class="flag__eur">Austria - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Belgium - Euro (EUR)</button>
-									<button value="BRL" class="flag__brl">Brazil - Brazilian Real (BRL)</button>
-									<button value="BND" class="flag__bnd">Brunei Darussalam - Brunei Dollar (BND)</button>
-									<button value="CAD" class="flag__cad">Canada - Canadian Dollar (CAD)</button>
-									<button value="CLP" class="flag__clp">Chile - Chilean Peso (CLP)</button>
-									<button value="HRK" class="flag__hrk">Croatia - Croatian Kuna (HRK)</button>
-									<button value="EUR" class="flag__eur">Cyprus - Euro (EUR)</button>
-									<button value="CZK" class="flag__czk">Czech Republic - Czech Koruna (CZK)</button>
-									<button value="DKK" class="flag__dkk">Denmark - Danish Krone (DKK)</button>
-									<button value="EUR" class="flag__eur">Estonia - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Finland - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">France - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">French Guiana - Euro (EUR)</button>
-									<button value="XPF" class="flag__xpf">French Polynesia - CFP Franc (XPF)</button>
-									<button value="EUR" class="flag__eur">French Southern Territories - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Germany - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Greece - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Guadeloupe - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Holy See (Vatican City State) - Euro (EUR)</button>
-									<button value="HKD" class="flag__hkd">Hong Kong - Hong Kong Dollar (HKD)</button>
-									<button value="HUF" class="flag__huf">Hungary - Hungarian Forint (HUF)</button>
-									<button value="EUR" class="flag__eur">Ireland - Euro (EUR)</button>
-									<button value="ILS" class="flag__ils">Israel - Israeli New Sheqel (ILS)</button>
-									<button value="EUR" class="flag__eur">Italy - Euro (EUR)</button>
-									<button value="KWD" class="flag__kwd">Kuwait - Kuwaiti Dinar (KWD)</button>
-									<button value="EUR" class="flag__eur">Luxembourg - Euro (EUR)</button>
-									<button value="MYR" class="flag__myr">Malaysia - Malaysian Ringgit (MYR)</button>
-									<button value="EUR" class="flag__eur">Malta - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Martinique - Euro (EUR)</button>
-									<button value="MUR" class="flag__mur">Mauritius - Mauritian Rupee (MUR)</button>
-									<button value="EUR" class="flag__eur">Mayotte - Euro (EUR)</button>
-									<button value="MXN" class="flag__mxn">Mexico - Mexican Peso (MXN)</button>
-									<button value="EUR" class="flag__eur">Monaco - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Montenegro - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Netherlands - Euro (EUR)</button>
-									<button value="XPF" class="flag__xpf">New Caledonia - CFP Franc (XPF)</button>
-									<button value="NOK" class="flag__nok">Norway - Norwegian Krone (NOK)</button>
-									<button value="OMR" class="flag__omr">Oman - Omani Rial (OMR)</button>
-									<button value="PGK" class="flag__pgk">Papua New Guinea - Papua New Guinean Kina (PGK)</button>
-									<button value="PHP" class="flag__php">Philippines - Philippine Peso (PHP)</button>
-									<button value="PLN" class="flag__pln">Poland - Polish Zloty (PLN)</button>
-									<button value="EUR" class="flag__eur">Portugal - Euro (EUR)</button>
-									<button value="RUB" class="flag__rub">Russian Federation - Russian Ruble (RUB)</button>
-									<button value="EUR" class="flag__eur">Saint Barthélemy - Euro (EUR)</button>
-									<button value="EUR" class="flag__eur">Saint Martin (French part) - Euro (EUR)</button>
-									<button value="WST" class="flag__wst">Samoa - Samoan Tala (WST)</button>
-									<button value="EUR" class="flag__eur">San Marino - Euro (EUR)</button>
-									<button value="SAR" class="flag__sar">Saudi Arabia - Saudi Riyal (SAR)</button>
-									<button value="EUR" class="flag__eur">Slovenia - Euro (EUR)</button>
-									<button value="SBD" class="flag__sbd">Solomon Islands - Solomon Islands Dollar (SBD)</button>
-									<button value="ZAR" class="flag__zar">South Africa - South African Rand (ZAR)</button>
-									<button value="KRW" class="flag__krw">South Korea - South Korean Won (KRW)</button>
-									<button value="EUR" class="flag__eur">Spain - Euro (EUR)</button>
-									<button value="SEK" class="flag__sek">Sweden - Swedish Krona (SEK)</button>
-									<button value="CHF" class="flag__chf">Switzerland - Swiss Franc (CHF)</button>
-									<button value="TWD" class="flag__twd">Taiwan - New Taiwan Dollar (TWD)</button>
-									<button value="THB" class="flag__thb">Thailand - Thai Baht (THB)</button>
-									<button value="TOP" class="flag__top">Tonga - Paanga (TOP)</button>
-									<button value="AED" class="flag__aed">United Arab Emirates - UAE Dirham (AED)</button>
-									<button value="VUV" class="flag__vuv">Vanuatu - Vanuatu Vatu (VUV)</button>
-									<button value="VND" class="flag__vnd">Vietnam - Vietnamese Dong (VND)</button>								</div>
+									<button value="EUR" class="flag__bg flag__bg--ax">Aland Islands (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--ad">Andorra (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--at">Austria (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--be">Belgium (EUR)</button>
+									<button value="BRL" class="flag__bg flag__bg--br">Brazil (BRL)</button>
+									<button value="BND" class="flag__bg flag__bg--bn">Brunei Darussalam (BND)</button>
+									<button value="CAD" class="flag__bg flag__bg--ca">Canada (CAD)</button>
+									<button value="CLP" class="flag__bg flag__bg--cl">Chile (CLP)</button>
+									<button value="CNY" class="flag__bg flag__bg--cn">China (CNY)</button>
+									<button value="EUR" class="flag__bg flag__bg--cy">Cyprus (EUR)</button>
+									<button value="CZK" class="flag__bg flag__bg--cz">Czech Republic (CZK)</button>
+									<button value="DKK" class="flag__bg flag__bg--dk">Denmark (DKK)</button>
+									<button value="EUR" class="flag__bg flag__bg--ee">Estonia (EUR)</button>
+									<button value="FJD" class="flag__bg flag__bg--fj">Fiji (FJD)</button>
+									<button value="EUR" class="flag__bg flag__bg--fi">Finland (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--fr">France (EUR)</button>
+									<button value="XPF" class="flag__bg flag__bg--pf">French Polynesia (XPF)</button>
+									<button value="EUR" class="flag__bg flag__bg--de">Germany (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--gr">Greece (EUR)</button>
+									<button value="HKD" class="flag__bg flag__bg--hk">Hong Kong (HKD)</button>
+									<button value="HUF" class="flag__bg flag__bg--hu">Hungary (HUF)</button>
+									<button value="IDR" class="flag__bg flag__bg--id">Indonesia (IDR)</button>
+									<button value="EUR" class="flag__bg flag__bg--ie">Ireland (EUR)</button>
+									<button value="ILS" class="flag__bg flag__bg--il">Israel (ILS)</button>
+									<button value="EUR" class="flag__bg flag__bg--it">Italy (EUR)</button>
+									<button value="JPY" class="flag__bg flag__bg--jp">Japan (JPY)</button>
+									<button value="KWD" class="flag__bg flag__bg--kw">Kuwait (KWD)</button>
+									<button value="EUR" class="flag__bg flag__bg--lu">Luxembourg (EUR)</button>
+									<button value="MYR" class="flag__bg flag__bg--my">Malaysia (MYR)</button>
+									<button value="EUR" class="flag__bg flag__bg--mt">Malta (EUR)</button>
+									<button value="MUR" class="flag__bg flag__bg--mu">Mauritius (MUR)</button>
+									<button value="MXN" class="flag__bg flag__bg--mx">Mexico (MXN)</button>
+									<button value="EUR" class="flag__bg flag__bg--mc">Monaco (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--me">Montenegro (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--nl">Netherlands (EUR)</button>
+									<button value="XPF" class="flag__bg flag__bg--nc">New Caledonia (XPF)</button>
+									<button value="NZD" class="flag__bg flag__bg--nz">New Zealand (NZD)</button>
+									<button value="NOK" class="flag__bg flag__bg--no">Norway (NOK)</button>
+									<button value="OMR" class="flag__bg flag__bg--om">Oman (OMR)</button>
+									<button value="PGK" class="flag__bg flag__bg--pg">Papua New Guinea (PGK)</button>
+									<button value="PHP" class="flag__bg flag__bg--ph">Philippines (PHP)</button>
+									<button value="PLN" class="flag__bg flag__bg--pl">Poland (PLN)</button>
+									<button value="EUR" class="flag__bg flag__bg--pt">Portugal (EUR)</button>
+									<button value="WST" class="flag__bg flag__bg--ws">Samoa (WST)</button>
+									<button value="EUR" class="flag__bg flag__bg--sm">San Marino (EUR)</button>
+									<button value="SAR" class="flag__bg flag__bg--sa">Saudi Arabia (SAR)</button>
+									<button value="SGD" class="flag__bg flag__bg--sg">Singapore (SGD)</button>
+									<button value="EUR" class="flag__bg flag__bg--sk">Slovakia (EUR)</button>
+									<button value="EUR" class="flag__bg flag__bg--si">Slovenia (EUR)</button>
+									<button value="SBD" class="flag__bg flag__bg--sb">Solomon Islands (SBD)</button>
+									<button value="ZAR" class="flag__bg flag__bg--za">South Africa (ZAR)</button>
+									<button value="KRW" class="flag__bg flag__bg--kr">South Korea (KRW)</button>
+									<button value="EUR" class="flag__bg flag__bg--es">Spain (EUR)</button>
+									<button value="SEK" class="flag__bg flag__bg--se">Sweden (SEK)</button>
+									<button value="CHF" class="flag__bg flag__bg--ch">Switzerland (CHF)</button>
+									<button value="TWD" class="flag__bg flag__bg--tw">Taiwan (TWD)</button>
+									<button value="THB" class="flag__bg flag__bg--th">Thailand (THB)</button>
+									<button value="TOP" class="flag__bg flag__bg--to">Tonga (TOP)</button>
+									<button value="TRY" class="flag__bg flag__bg--tr">Turkey (TRY)</button>
+									<button value="AED" class="flag__bg flag__bg--ae">United Arab Emirates (AED)</button>
+									<button value="GBP" class="flag__bg flag__bg--gb">United Kingdom (GBP)</button>
+									<button value="USD" class="flag__bg flag__bg--us">USA (USD)</button>
+									<button value="VUV" class="flag__bg flag__bg--vu">Vanuatu (VUV)</button>
+									<button value="VND" class="flag__bg flag__bg--vn">Vietnam (VND)</button>								</div>
 							</div>
 						</div>
 					</div>
 					<div class="form-group">
 						オンラインレート: 1 USD = 120JPY<br>
-						<small>両替レート最終更新日 2018年 7月 20日 金曜日<br>
-						10:34:23 日本標準時</small>
+						<small>両替レート最終更新日 2018年 7月 20日 金曜日 10:34:23 日本標準時</small>
 					</div>
 					<button type="submit" class="btn btn-crimson btn-block btn-lg">
 						購入手続きを行う

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.carousel {
+	height: 300px;
+	width: 400px;
+	overflow: hidden;
+	position: relative;
+}
+.carousel__activator {
+	display: none;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1), .carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2), .carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3), .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+	transition: opacity 0.5s;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1), .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2), .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3), .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+	opacity: 1;
+}
+.carousel__indicators {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: right;
+}
+.carousel__indicator {
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	display: inline-block;
+	z-index: 2;
+	cursor: pointer;
+	opacity: 0.35;
+	margin: 0 2.5px 0 2.5px;
+}
+.carousel__indicator:hover {
+	opacity: 0.75;
+}
+.carousel__slide {
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	opacity: 0;
+}
+.carousel__container {
+	display: inline-block;
+}
+.carousel__indicator {
+	background-color: #fafafa;
+}
+.carousel__slide {
+	background-image: linear-gradient(to bottom right, #f00, #00f);
+	background-size: cover;
+	background-position: center;
+}
+.carousel__slide:nth-of-type(2) {
+	background-image: linear-gradient(to bottom left, #f00, #00f);
+	background-size: cover;
+	background-position: center;
+}
+.carousel__slide:nth-of-type(3) {
+	background-image: linear-gradient(to top right, #f00, #00f);
+	background-size: cover;
+	background-position: center;
+}
+.carousel__slide:nth-of-type(4) {
+	background-image: linear-gradient(to top left, #f00, #00f);
+	background-size: cover;
+	background-position: center;
+}
+</style>
+</head>     
+
+<body>
+
+<div class="carousel__container">
+	<div class="carousel">
+		<input class="carousel__activator" type="radio" id="A" name="activator" checked="checked"/>
+		<div class="carousel__slide"></div>
+		<input class="carousel__activator" type="radio" id="B" name="activator"/>
+		<div class="carousel__slide"></div>
+		<input class="carousel__activator" type="radio" id="C" name="activator"/>
+		<div class="carousel__slide"></div>
+		<input class="carousel__activator" type="radio" id="D" name="activator"/>
+		<div class="carousel__slide"></div>
+		<div class="carousel__indicators">
+			<label class="carousel__indicator" for="A"></label>
+			<label class="carousel__indicator" for="B"></label>
+			<label class="carousel__indicator" for="C"></label>
+			<label class="carousel__indicator" for="D"></label>
+		</div>
+	</div>
+</div>
+<br>xxx
+
+</body>
+</html>

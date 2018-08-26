@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="Travelex">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=rM30rJxA9X">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+	<title>Travelex</title>
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+
+<section class="hero">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="hero__forex col-lg-5">
+				<div class="hero__headline d-lg-none">
+					<h1>
+						オンラインで外貨購入<br>
+						<small>ご自宅・職場へ宅配店舗で戸『取りもOK! 便利な外貨宅配サービスを是非ご申」用ください。</small>
+					</h1>
+				</div>
+				<form class="hero__calculator">
+					<div class="row">
+						<div class="col-12 col-sm-6 col-lg-12">
+							<label class="hero__calculator-label" for="fromNumber">外貨両替自動計算</label>
+							<div class="hero__calculator-input input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">$</span>
+								</div>
+								<input type="text" class="form-control" aria-label="に">
+								<div class="input-group-append">
+									<span class="input-group-text" id="currency__from__dropdown-label">JPY</span>
+								</div>
+							</div>
+							<div class="squeezer" id="currency__from__list">
+								<div class="hero__calculator-dropdown">
+									<div class="input-group">
+										<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency__from">
+										<label for="currency__from" class="input-group-append">
+											<span class="input-group-text"><i class="far fa-search fa-fw"></i></span>
+										</label>
+									</div>
+									<div class="hero__calculator-currencies">
+										<button name="Aland Islands (EUR)" value="EUR" class="flag__bg flag__bg--ax">Aland Islands (EUR)</button>
+										<button name="Andorra (EUR)" value="EUR" class="flag__bg flag__bg--ad">Andorra (EUR)</button>
+										<button name="Austria (EUR)" value="EUR" class="flag__bg flag__bg--at">Austria (EUR)</button>
+										<button name="Belgium (EUR)" value="EUR" class="flag__bg flag__bg--be">Belgium (EUR)</button>
+										<button name="Brazil (BRL)" value="BRL" class="flag__bg flag__bg--br">Brazil (BRL)</button>
+										<button name="Brunei Darussalam (BND)" value="BND" class="flag__bg flag__bg--bn">Brunei Darussalam (BND)</button>
+										<button name="Canada (CAD)" value="CAD" class="flag__bg flag__bg--ca">Canada (CAD)</button>
+										<button name="Chile (CLP)" value="CLP" class="flag__bg flag__bg--cl">Chile (CLP)</button>
+										<button name="China (CNY)" value="CNY" class="flag__bg flag__bg--cn">China (CNY)</button>
+										<button name="Cyprus (EUR)" value="EUR" class="flag__bg flag__bg--cy">Cyprus (EUR)</button>
+										<button name="Czech Republic (CZK)" value="CZK" class="flag__bg flag__bg--cz">Czech Republic (CZK)</button>
+										<button name="Denmark (DKK)" value="DKK" class="flag__bg flag__bg--dk">Denmark (DKK)</button>
+										<button name="Estonia (EUR)" value="EUR" class="flag__bg flag__bg--ee">Estonia (EUR)</button>
+										<button name="Fiji (FJD)" value="FJD" class="flag__bg flag__bg--fj">Fiji (FJD)</button>
+										<button name="Finland (EUR)" value="EUR" class="flag__bg flag__bg--fi">Finland (EUR)</button>
+										<button name="France (EUR)" value="EUR" class="flag__bg flag__bg--fr">France (EUR)</button>
+										<button name="French Polynesia (XPF)" value="XPF" class="flag__bg flag__bg--pf">French Polynesia (XPF)</button>
+										<button name="Germany (EUR)" value="EUR" class="flag__bg flag__bg--de">Germany (EUR)</button>
+										<button name="Greece (EUR)" value="EUR" class="flag__bg flag__bg--gr">Greece (EUR)</button>
+										<button name="Hong Kong (HKD)" value="HKD" class="flag__bg flag__bg--hk">Hong Kong (HKD)</button>
+										<button name="Hungary (HUF)" value="HUF" class="flag__bg flag__bg--hu">Hungary (HUF)</button>
+										<button name="Indonesia (IDR)" value="IDR" class="flag__bg flag__bg--id">Indonesia (IDR)</button>
+										<button name="Ireland (EUR)" value="EUR" class="flag__bg flag__bg--ie">Ireland (EUR)</button>
+										<button name="Israel (ILS)" value="ILS" class="flag__bg flag__bg--il">Israel (ILS)</button>
+										<button name="Italy (EUR)" value="EUR" class="flag__bg flag__bg--it">Italy (EUR)</button>
+										<button name="Japan (JPY)" value="JPY" class="flag__bg flag__bg--jp">Japan (JPY)</button>
+										<button name="Kuwait (KWD)" value="KWD" class="flag__bg flag__bg--kw">Kuwait (KWD)</button>
+										<button name="Luxembourg (EUR)" value="EUR" class="flag__bg flag__bg--lu">Luxembourg (EUR)</button>
+										<button name="Malaysia (MYR)" value="MYR" class="flag__bg flag__bg--my">Malaysia (MYR)</button>
+										<button name="Malta (EUR)" value="EUR" class="flag__bg flag__bg--mt">Malta (EUR)</button>
+										<button name="Mauritius (MUR)" value="MUR" class="flag__bg flag__bg--mu">Mauritius (MUR)</button>
+										<button name="Mexico (MXN)" value="MXN" class="flag__bg flag__bg--mx">Mexico (MXN)</button>
+										<button name="Monaco (EUR)" value="EUR" class="flag__bg flag__bg--mc">Monaco (EUR)</button>
+										<button name="Montenegro (EUR)" value="EUR" class="flag__bg flag__bg--me">Montenegro (EUR)</button>
+										<button name="Netherlands (EUR)" value="EUR" class="flag__bg flag__bg--nl">Netherlands (EUR)</button>
+										<button name="New Caledonia (XPF)" value="XPF" class="flag__bg flag__bg--nc">New Caledonia (XPF)</button>
+										<button name="New Zealand (NZD)" value="NZD" class="flag__bg flag__bg--nz">New Zealand (NZD)</button>
+										<button name="Norway (NOK)" value="NOK" class="flag__bg flag__bg--no">Norway (NOK)</button>
+										<button name="Oman (OMR)" value="OMR" class="flag__bg flag__bg--om">Oman (OMR)</button>
+										<button name="Papua New Guinea (PGK)" value="PGK" class="flag__bg flag__bg--pg">Papua New Guinea (PGK)</button>
+										<button name="Philippines (PHP)" value="PHP" class="flag__bg flag__bg--ph">Philippines (PHP)</button>
+										<button name="Poland (PLN)" value="PLN" class="flag__bg flag__bg--pl">Poland (PLN)</button>
+										<button name="Portugal (EUR)" value="EUR" class="flag__bg flag__bg--pt">Portugal (EUR)</button>
+										<button name="Samoa (WST)" value="WST" class="flag__bg flag__bg--ws">Samoa (WST)</button>
+										<button name="San Marino (EUR)" value="EUR" class="flag__bg flag__bg--sm">San Marino (EUR)</button>
+										<button name="Saudi Arabia (SAR)" value="SAR" class="flag__bg flag__bg--sa">Saudi Arabia (SAR)</button>
+										<button name="Singapore (SGD)" value="SGD" class="flag__bg flag__bg--sg">Singapore (SGD)</button>
+										<button name="Slovakia (EUR)" value="EUR" class="flag__bg flag__bg--sk">Slovakia (EUR)</button>
+										<button name="Slovenia (EUR)" value="EUR" class="flag__bg flag__bg--si">Slovenia (EUR)</button>
+										<button name="Solomon Islands (SBD)" value="SBD" class="flag__bg flag__bg--sb">Solomon Islands (SBD)</button>
+										<button name="South Africa (ZAR)" value="ZAR" class="flag__bg flag__bg--za">South Africa (ZAR)</button>
+										<button name="South Korea (KRW)" value="KRW" class="flag__bg flag__bg--kr">South Korea (KRW)</button>
+										<button name="Spain (EUR)" value="EUR" class="flag__bg flag__bg--es">Spain (EUR)</button>
+										<button name="Sweden (SEK)" value="SEK" class="flag__bg flag__bg--se">Sweden (SEK)</button>
+										<button name="Switzerland (CHF)" value="CHF" class="flag__bg flag__bg--ch">Switzerland (CHF)</button>
+										<button name="Taiwan (TWD)" value="TWD" class="flag__bg flag__bg--tw">Taiwan (TWD)</button>
+										<button name="Thailand (THB)" value="THB" class="flag__bg flag__bg--th">Thailand (THB)</button>
+										<button name="Tonga (TOP)" value="TOP" class="flag__bg flag__bg--to">Tonga (TOP)</button>
+										<button name="Turkey (TRY)" value="TRY" class="flag__bg flag__bg--tr">Turkey (TRY)</button>
+										<button name="United Arab Emirates (AED)" value="AED" class="flag__bg flag__bg--ae">United Arab Emirates (AED)</button>
+										<button name="United Kingdom (GBP)" value="GBP" class="flag__bg flag__bg--gb">United Kingdom (GBP)</button>
+										<button name="USA (USD)" value="USD" class="flag__bg flag__bg--us">USA (USD)</button>
+										<button name="Vanuatu (VUV)" value="VUV" class="flag__bg flag__bg--vu">Vanuatu (VUV)</button>
+										<button name="Vietnam (VND)" value="VND" class="flag__bg flag__bg--vn">Vietnam (VND)</button>									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-12">
+							<label class="hero__calculator-label" for="toNumber">に</label>
+							<div class="hero__calculator-input input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">$</span>
+								</div>
+								<input type="text" class="form-control" aria-label="に">
+								<div class="input-group-append">
+									<span class="input-group-text" id="currency__to__dropdown-label">USD</span>
+								</div>
+							</div>
+							<div class="squeezer" id="currency__to__list">
+								<div class="hero__calculator-dropdown">
+									<div class="input-group">
+										<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency__to">
+										<label for="currency__to" class="input-group-append">
+											<span class="input-group-text"><i class="far fa-search fa-fw"></i></span>
+										</label>
+									</div>
+									<div class="hero__calculator-currencies">
+										<button name="Aland Islands (EUR)" value="EUR" class="flag__bg flag__bg--ax">Aland Islands (EUR)</button>
+										<button name="Andorra (EUR)" value="EUR" class="flag__bg flag__bg--ad">Andorra (EUR)</button>
+										<button name="Austria (EUR)" value="EUR" class="flag__bg flag__bg--at">Austria (EUR)</button>
+										<button name="Belgium (EUR)" value="EUR" class="flag__bg flag__bg--be">Belgium (EUR)</button>
+										<button name="Brazil (BRL)" value="BRL" class="flag__bg flag__bg--br">Brazil (BRL)</button>
+										<button name="Brunei Darussalam (BND)" value="BND" class="flag__bg flag__bg--bn">Brunei Darussalam (BND)</button>
+										<button name="Canada (CAD)" value="CAD" class="flag__bg flag__bg--ca">Canada (CAD)</button>
+										<button name="Chile (CLP)" value="CLP" class="flag__bg flag__bg--cl">Chile (CLP)</button>
+										<button name="China (CNY)" value="CNY" class="flag__bg flag__bg--cn">China (CNY)</button>
+										<button name="Cyprus (EUR)" value="EUR" class="flag__bg flag__bg--cy">Cyprus (EUR)</button>
+										<button name="Czech Republic (CZK)" value="CZK" class="flag__bg flag__bg--cz">Czech Republic (CZK)</button>
+										<button name="Denmark (DKK)" value="DKK" class="flag__bg flag__bg--dk">Denmark (DKK)</button>
+										<button name="Estonia (EUR)" value="EUR" class="flag__bg flag__bg--ee">Estonia (EUR)</button>
+										<button name="Fiji (FJD)" value="FJD" class="flag__bg flag__bg--fj">Fiji (FJD)</button>
+										<button name="Finland (EUR)" value="EUR" class="flag__bg flag__bg--fi">Finland (EUR)</button>
+										<button name="France (EUR)" value="EUR" class="flag__bg flag__bg--fr">France (EUR)</button>
+										<button name="French Polynesia (XPF)" value="XPF" class="flag__bg flag__bg--pf">French Polynesia (XPF)</button>
+										<button name="Germany (EUR)" value="EUR" class="flag__bg flag__bg--de">Germany (EUR)</button>
+										<button name="Greece (EUR)" value="EUR" class="flag__bg flag__bg--gr">Greece (EUR)</button>
+										<button name="Hong Kong (HKD)" value="HKD" class="flag__bg flag__bg--hk">Hong Kong (HKD)</button>
+										<button name="Hungary (HUF)" value="HUF" class="flag__bg flag__bg--hu">Hungary (HUF)</button>
+										<button name="Indonesia (IDR)" value="IDR" class="flag__bg flag__bg--id">Indonesia (IDR)</button>
+										<button name="Ireland (EUR)" value="EUR" class="flag__bg flag__bg--ie">Ireland (EUR)</button>
+										<button name="Israel (ILS)" value="ILS" class="flag__bg flag__bg--il">Israel (ILS)</button>
+										<button name="Italy (EUR)" value="EUR" class="flag__bg flag__bg--it">Italy (EUR)</button>
+										<button name="Japan (JPY)" value="JPY" class="flag__bg flag__bg--jp">Japan (JPY)</button>
+										<button name="Kuwait (KWD)" value="KWD" class="flag__bg flag__bg--kw">Kuwait (KWD)</button>
+										<button name="Luxembourg (EUR)" value="EUR" class="flag__bg flag__bg--lu">Luxembourg (EUR)</button>
+										<button name="Malaysia (MYR)" value="MYR" class="flag__bg flag__bg--my">Malaysia (MYR)</button>
+										<button name="Malta (EUR)" value="EUR" class="flag__bg flag__bg--mt">Malta (EUR)</button>
+										<button name="Mauritius (MUR)" value="MUR" class="flag__bg flag__bg--mu">Mauritius (MUR)</button>
+										<button name="Mexico (MXN)" value="MXN" class="flag__bg flag__bg--mx">Mexico (MXN)</button>
+										<button name="Monaco (EUR)" value="EUR" class="flag__bg flag__bg--mc">Monaco (EUR)</button>
+										<button name="Montenegro (EUR)" value="EUR" class="flag__bg flag__bg--me">Montenegro (EUR)</button>
+										<button name="Netherlands (EUR)" value="EUR" class="flag__bg flag__bg--nl">Netherlands (EUR)</button>
+										<button name="New Caledonia (XPF)" value="XPF" class="flag__bg flag__bg--nc">New Caledonia (XPF)</button>
+										<button name="New Zealand (NZD)" value="NZD" class="flag__bg flag__bg--nz">New Zealand (NZD)</button>
+										<button name="Norway (NOK)" value="NOK" class="flag__bg flag__bg--no">Norway (NOK)</button>
+										<button name="Oman (OMR)" value="OMR" class="flag__bg flag__bg--om">Oman (OMR)</button>
+										<button name="Papua New Guinea (PGK)" value="PGK" class="flag__bg flag__bg--pg">Papua New Guinea (PGK)</button>
+										<button name="Philippines (PHP)" value="PHP" class="flag__bg flag__bg--ph">Philippines (PHP)</button>
+										<button name="Poland (PLN)" value="PLN" class="flag__bg flag__bg--pl">Poland (PLN)</button>
+										<button name="Portugal (EUR)" value="EUR" class="flag__bg flag__bg--pt">Portugal (EUR)</button>
+										<button name="Samoa (WST)" value="WST" class="flag__bg flag__bg--ws">Samoa (WST)</button>
+										<button name="San Marino (EUR)" value="EUR" class="flag__bg flag__bg--sm">San Marino (EUR)</button>
+										<button name="Saudi Arabia (SAR)" value="SAR" class="flag__bg flag__bg--sa">Saudi Arabia (SAR)</button>
+										<button name="Singapore (SGD)" value="SGD" class="flag__bg flag__bg--sg">Singapore (SGD)</button>
+										<button name="Slovakia (EUR)" value="EUR" class="flag__bg flag__bg--sk">Slovakia (EUR)</button>
+										<button name="Slovenia (EUR)" value="EUR" class="flag__bg flag__bg--si">Slovenia (EUR)</button>
+										<button name="Solomon Islands (SBD)" value="SBD" class="flag__bg flag__bg--sb">Solomon Islands (SBD)</button>
+										<button name="South Africa (ZAR)" value="ZAR" class="flag__bg flag__bg--za">South Africa (ZAR)</button>
+										<button name="South Korea (KRW)" value="KRW" class="flag__bg flag__bg--kr">South Korea (KRW)</button>
+										<button name="Spain (EUR)" value="EUR" class="flag__bg flag__bg--es">Spain (EUR)</button>
+										<button name="Sweden (SEK)" value="SEK" class="flag__bg flag__bg--se">Sweden (SEK)</button>
+										<button name="Switzerland (CHF)" value="CHF" class="flag__bg flag__bg--ch">Switzerland (CHF)</button>
+										<button name="Taiwan (TWD)" value="TWD" class="flag__bg flag__bg--tw">Taiwan (TWD)</button>
+										<button name="Thailand (THB)" value="THB" class="flag__bg flag__bg--th">Thailand (THB)</button>
+										<button name="Tonga (TOP)" value="TOP" class="flag__bg flag__bg--to">Tonga (TOP)</button>
+										<button name="Turkey (TRY)" value="TRY" class="flag__bg flag__bg--tr">Turkey (TRY)</button>
+										<button name="United Arab Emirates (AED)" value="AED" class="flag__bg flag__bg--ae">United Arab Emirates (AED)</button>
+										<button name="United Kingdom (GBP)" value="GBP" class="flag__bg flag__bg--gb">United Kingdom (GBP)</button>
+										<button name="USA (USD)" value="USD" class="flag__bg flag__bg--us">USA (USD)</button>
+										<button name="Vanuatu (VUV)" value="VUV" class="flag__bg flag__bg--vu">Vanuatu (VUV)</button>
+										<button name="Vietnam (VND)" value="VND" class="flag__bg flag__bg--vn">Vietnam (VND)</button>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						オンラインレート: 1 USD = 120JPY
+						<small>
+							両替レート最終更新日 2018年 7月 20日 金曜日 10:34:23 日本標準時
+						</small>
+					</div>
+					<button type="submit" class="btn btn-crimson btn-block btn-lg">
+						購入手続きを行う
+					</button>
+				</form>
+				<div class="hero__credentials d-none d-lg-flex">
+					<div>
+						<i class="fa fa-yen-sign"></i>
+						<img src="assets/img/logo__canstar.png" alt=""><br>
+						<em>¡</em>写すよ北蓄写どぎ住決ホネ。
+					</div>
+					<div>
+						<img src="assets/img/logo__canstar.png" alt=""><br>
+						<em>¡</em>ルタスヌ基正ぽ真済ミソ議確みぼ。
+					</div>
+					<div>
+						<img src="assets/img/logo__canstar.png" alt=""><br>
+						<em>¡</em>セス迎車敗つわ性断ソケルヲ率響5案。
+					</div>
+				</div>
+			</div>
+			<div class="hero__carousel d-none d-lg-block col-lg-7">
+				<div class="carousel__container">
+					<div class="carousel">
+						<input class="carousel__activator" type="radio" id="A" name="hero__carousel" checked>
+						<div class="carousel__slide" style="background-image: url(assets/img/hero__stock-1.jpg);">
+							<a href="#" class="carousel__content">
+								<h1>
+									オンライン<br>
+									で外貨購入
+								</h1>
+								<p>
+									ご自宅・職場へ宅配<br>
+									店舗で戸『取りもOK!<br>
+									便利な外貨宅配サービスを是非ご申」用ください。
+								</p>
+							</a>
+						</div>
+						<input class="carousel__activator" type="radio" id="B" name="hero__carousel">
+						<div class="carousel__slide" style="background-image: url(assets/img/hero__stock-2.jpg);">
+							<a href="#" class="carousel__content">
+								<h2>
+									<em>¡</em>称づすきぞ自玲<br>
+									氏がゅ力経づろ夢速ワ
+								</h2>
+								<p>
+									<em>¡</em>統青開掲ばッむけ市様す難交型ヒネノ買圧ごえへち。<br>
+									弾反ネ今研ざ耳会濤ネ代紋クふがょ明過クヨ。<br>
+									氏がゅ力経づろ夢速ワマエ済司ぴごで。
+								</p>
+							</a>
+						</div>
+						<input class="carousel__activator" type="radio" id="C" name="hero__carousel">
+						<div class="carousel__slide" style="background-image: url(assets/img/hero__stock-3.jpg);">
+							<a href="#" class="carousel__content">
+								<h2>
+									<em>¡</em>型ミコホ北供サエ時ホタニレ庁<br>
+									弾反ネ今研
+								</h2>
+								<p>
+									<em>¡</em>弾反ネ今研ざ耳会濤ネ代紋クふがょ明過クヨ。<br>
+									記オメ給5報ホライセ情投ユコヨ賀公ぴおゅょ住18豊リメ殺込川テ率。<br>
+									験文る煙病ねい裁択エフ。
+								</p>
+							</a>
+						</div>
+						<input class="carousel__activator" type="radio" id="D" name="hero__carousel">
+						<div class="carousel__slide" style="background-image: url(assets/img/hero__stock-4.jpg);">
+							<a href="#" class="carousel__content">
+								<h2>
+									<em>¡</em>ネ田記やイひな四<br>
+									弾反ネ今研
+								</h2>
+								<p>
+									<em>¡</em>青丁いてつぜ。<br>
+									17回ゅンぴ努音ンちつ性今務聞てぐし中よきば架型掛焼詐ンふさ。<br>
+									弾反ネ今研ざ耳会濤ネ代紋クふがょ明過クヨ。
+								</p>
+							</a>
+						</div>
+						<div class="carousel__indicators">
+							<label class="carousel__indicator" for="A"></label>
+							<label class="carousel__indicator" for="B"></label>
+							<label class="carousel__indicator" for="C"></label>
+							<label class="carousel__indicator" for="D"></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><hr class="divider "><section class="blocks">
+	<div class="container-fluid">
+		<div class="row blocks__grid">
+			<a href="#" class="blocks__block bg-port col-12 col-sm-6 col-lg-4 order-sm-1 order-lg-1 d-none d-sm-block">
+				<div class="blocks__content">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28" class="fill-white"><path d="M17.719 16.797C16.938 19.313 14.641 21 12 21s-4.937-1.687-5.719-4.203c-.172-.531.125-1.078.656-1.25.516-.172 1.078.125 1.25.656C8.703 17.875 10.25 19 12 19s3.297-1.125 3.813-2.797a1.006 1.006 0 0 1 1.266-.656.994.994 0 0 1 .641 1.25zM10 10c0 1.109-.891 2-2 2s-2-.891-2-2 .891-2 2-2 2 .891 2 2zm8 0c0 1.109-.891 2-2 2s-2-.891-2-2 .891-2 2-2 2 .891 2 2zm4 4c0-5.516-4.484-10-10-10S2 8.484 2 14s4.484 10 10 10 10-4.484 10-10zm2 0c0 6.625-5.375 12-12 12S0 20.625 0 14 5.375 2 12 2s12 5.375 12 12z"/></svg>
+					<h3>お知らせ</h3>
+					<p><em>¡</em>夜ス豊建の字性詳南ずそイ室36斉ニユ辞戦せわう政暮ソスワ訟見きなばぼ税記レメ優選にほや党社ムクセユ間権ユクチレ災漁コア禁紀わもラょ健15強が。暮面ルタスヌ基正ぽ真済ミソ議確みぼ。</p>
+					<span class="btn btn-port">詳細</span>
+				</div>
+			</a>
+			<a href="#" class="blocks__block col-12 col-sm-6 col-lg-4 order-sm-2 order-lg-2">
+				<div class="blocks__content">
+					<h3>外貨買取優遇レートサービス</h3>
+					<p>渡航先で使い残した外貨を優遇レートでお買取いたします。</p>
+					<p>ただし渡航前外貨購入時に所定の費用を申し受けます</p>
+					<span class="btn btn-crimson">オンラインで申込む</span>
+				</div>
+			</a>
+			<div href="#" class="blocks__block bg-stock col-12 col-sm-6 col-lg-4 order-sm-4 order-lg-3 d-none d-sm-block" style="background-image: url(assets/img/blocks__stock-1.jpg);"></div>
+			<a href="#" class="blocks__block col-12 col-sm-6 col-lg-4 order-sm-3 order-lg-4">
+				<div class="blocks__content">
+					<h3>海外専用プリペイドカード「キャッシュパスポート」</h3>
+					<p>渡航先でご利用になる金額をプリペイドカードに入金いただき、現地でお支払いに、ＡＴＭからのお引き出しにご利用いただけます。</p>
+					<span class="btn btn-crimson">詳細はこちらから</span>
+				</div>
+			</a>
+			<div href="#" class="blocks__block bg-stock col-12 col-sm-6 col-lg-4 order-sm-5 order-lg-5" style="background-image: url(assets/img/blocks__stock-2.jpg);"></div>
+			<a href="#" class="blocks__block bg-cerulean col-12 col-sm-6 col-lg-4 order-sm-6 order-lg-6 d-none d-sm-block">
+				<div class="blocks__content">
+					<h3>トラベレックスリワードプログラム</h3>
+					<p>年会費・入会金無料！即日レート割引を適用いたします。</p>
+					<span class="btn btn-cerulean">外貨を選択</span>
+				</div>
+			</a>
+		</div>
+	</div>
+</section><hr class="divider "><section class="faq">
+	<div class="container-fluid">
+		<h2 class="text-center">Help &amp; FAQ</h2>
+		<p class="lead">
+			Common questions
+		</p>
+		<div class="faq__question">
+			<input type="checkbox" id="faq1">
+			<label for="faq1">
+				If I choose home delivery, when will I receive my order?
+			</label>
+			<div class="faq__answer">
+				If you choose to pay by credit card you will receive your order within 3 working days. An extra day is required when choosing to pay via BPAY.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq2">
+			<label for="faq2">
+				When can I pick up my order from a store or airport?
+			</label>
+			<div class="faq__answer">
+				If paying by credit card, you can collect it from a store in 3 working days or at an airport the next day. If paying by BPAY you’ll be able to pick it up within 4 working days from a store, or 3 working days from an airport.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq3">
+			<label for="faq3">
+				I need foreign cash ASAP – what’s my best option?
+			</label>
+			<div class="faq__answer">
+				Pay by credit card and collect at airport the very next day (with the exception of Sydney airport). If you’re in in Sydney the quickest option is to order by credit card and you’ll receive your order, or be able to collect it within 3 working days.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq4">
+			<label for="faq4">
+				How do I get alerted when the rates are on offer?
+			</label>
+			<div class="faq__answer">
+				Sign up to our mailing list and get notified when we are having rate sales and promotions.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq5">
+			<label for="faq5">
+				How long will it take for my payment to go through?
+			</label>
+			<div class="faq__answer">
+				If paying by credit card it’s immediate, if using BPAY it usually takes 24 hours.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq6">
+			<label for="faq6">
+				Can I send someone else to collect my order?
+			</label>
+			<div class="faq__answer">
+				No, the person who puts in the order will have to collect it. This is the same for online orders; whoever puts the order in will need to be the one to receive it.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq7">
+			<label for="faq7">
+				What do I need to take/have on me to be able to collect my order?
+			</label>
+			<div class="faq__answer">
+				You will need to take the ID which you used during the ordering process, as well as your order reference number.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq8">
+			<label for="faq8">
+				Do I need to be at home to collect my home delivery?
+			</label>
+			<div class="faq__answer">
+				Yes you will need to be at home.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq9">
+			<label for="faq9">
+				What surcharge will apply to my transaction if I use a card to pay for my order?
+			</label>
+			<div class="faq__answer">
+				<ul>
+					<li>Mastercard Debit – 0.77%</li>
+					<li>Visa Debit – 0.72%</li>
+					<li>Visa Credit – 1.00%</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	document.documentElement.style.setProperty('--scrollbar', window.innerWidth - document.documentElement.clientWidth + 'px');
+	function canWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}canWebP()?document.body.className+=" webp":document.body.className+=" jpg";
+	var images = [ ];
+	var toLoad = images.length;
+	for (var i = 0; i < images.length; i++) {
+		var image = new Image();
+		image.src = 'assets/img/' + images[i];
+		image.onload = function() {
+			toLoad--;
+			if (!toLoad) document.body.className+=" animate";
+		};
+	}
+
+	var carouselTimers = {};
+	var nextSlide = function($_carousel) {
+		var inputName = $_carousel.querySelectorAll('input')[0].name;
+		clearTimeout(carouselTimers[inputName]);
+		carouselTimers[inputName] = setTimeout(
+			function() {
+				var $_inputs = $_carousel.querySelectorAll('input');
+				for (var k = 0; k < $_inputs.length; k++) {
+					var next = k + 1;
+					if ($_inputs[k].checked) {
+						$_inputs[k].checked = 'false';
+						if (next === $_inputs.length) {
+							next = 0;
+						}
+						$_inputs[next].checked = 'true';
+						break;
+					}
+				}
+				nextSlide($_carousel);
+			},
+			7500
+		);
+	}
+	var $_carousels = document.querySelectorAll('.carousel');
+	for (var i = 0; i < $_carousels.length; i++) {
+		var $_carousel = $_carousels[i];
+		var $_labels = $_carousel.querySelectorAll('label');
+		for (var j = 0; j < $_labels.length; j++) {
+			$_labels[j].addEventListener('click', function() {
+				nextSlide($_carousel)
+			});
+		}
+		nextSlide($_carousel);
+	}
+
+</script>
+<script type="text/javascript" src="assets/js/all.js"></script>
+<script type="text/javascript" src="assets/js/components/currencyDropdown.js"></script>
+
+</body>
+</html>

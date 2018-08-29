@@ -1,102 +1,794 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.carousel {
-	height: 300px;
-	width: 400px;
-	overflow: hidden;
-	position: relative;
-}
-.carousel__activator {
-	display: none;
-}
-.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1), .carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2), .carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3), .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
-	transition: opacity 0.5s;
-	top: 0;
-	left: 0;
-	right: 0;
-	opacity: 1;
-}
-.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1), .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2), .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3), .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
-	opacity: 1;
-}
-.carousel__indicators {
-	position: absolute;
-	bottom: 20px;
-	width: 100%;
-	text-align: right;
-}
-.carousel__indicator {
-	height: 15px;
-	width: 15px;
-	border-radius: 100%;
-	display: inline-block;
-	z-index: 2;
-	cursor: pointer;
-	opacity: 0.35;
-	margin: 0 2.5px 0 2.5px;
-}
-.carousel__indicator:hover {
-	opacity: 0.75;
-}
-.carousel__slide {
-	height: 100%;
-	position: absolute;
-	overflow: hidden;
-	opacity: 0;
-}
-.carousel__container {
-	display: inline-block;
-}
-.carousel__indicator {
-	background-color: #fafafa;
-}
-.carousel__slide {
-	background-image: linear-gradient(to bottom right, #f00, #00f);
-	background-size: cover;
-	background-position: center;
-}
-.carousel__slide:nth-of-type(2) {
-	background-image: linear-gradient(to bottom left, #f00, #00f);
-	background-size: cover;
-	background-position: center;
-}
-.carousel__slide:nth-of-type(3) {
-	background-image: linear-gradient(to top right, #f00, #00f);
-	background-size: cover;
-	background-position: center;
-}
-.carousel__slide:nth-of-type(4) {
-	background-image: linear-gradient(to top left, #f00, #00f);
-	background-size: cover;
-	background-position: center;
-}
-</style>
-</head>     
-
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="Travelex">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=rM30rJxA9X">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+	<title>Travelex</title>
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
 <body>
 
-<div class="carousel__container">
-	<div class="carousel">
-		<input class="carousel__activator" type="radio" id="A" name="activator" checked="checked"/>
-		<div class="carousel__slide"></div>
-		<input class="carousel__activator" type="radio" id="B" name="activator"/>
-		<div class="carousel__slide"></div>
-		<input class="carousel__activator" type="radio" id="C" name="activator"/>
-		<div class="carousel__slide"></div>
-		<input class="carousel__activator" type="radio" id="D" name="activator"/>
-		<div class="carousel__slide"></div>
-		<div class="carousel__indicators">
-			<label class="carousel__indicator" for="A"></label>
-			<label class="carousel__indicator" for="B"></label>
-			<label class="carousel__indicator" for="C"></label>
-			<label class="carousel__indicator" for="D"></label>
+<section class="hero">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="hero__forex col-lg-5">
+				<div class="hero__headline d-lg-none">
+					<h1>
+						オンラインで外貨購入<br>
+						<small>ご自宅・職場へ宅配店舗で戸『取りもOK! 便利な外貨宅配サービスを是非ご申」用ください。</small>
+					</h1>
+				</div>
+				<form class="hero__calculator">
+					<div class="row">
+						<div class="col-12 col-sm-6 col-lg-12">
+							<label class="hero__calculator-label" for="fromNumber">外貨両替自動計算</label>
+							<div class="hero__calculator-input input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">$</span>
+								</div>
+								<input type="text" class="form-control" aria-label="に">
+								<div class="input-group-append">
+									<span class="input-group-text" id="currency__from__dropdown-label">JPY</span>
+								</div>
+							</div>
+							<div class="squeezer" id="currency__from__list">
+								<div class="hero__calculator-dropdown">
+									<div class="input-group">
+										<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency__from">
+										<label for="currency__from" class="input-group-append">
+											<span class="input-group-text"><i class="far fa-search fa-fw"></i></span>
+										</label>
+									</div>
+									<div class="hero__calculator-currencies">
+										<button name="Aland Islands (EUR)" value="EUR" class="flag__bg flag__bg--ax">Aland Islands (EUR)</button>
+										<button name="Andorra (EUR)" value="EUR" class="flag__bg flag__bg--ad">Andorra (EUR)</button>
+										<button name="Austria (EUR)" value="EUR" class="flag__bg flag__bg--at">Austria (EUR)</button>
+										<button name="Belgium (EUR)" value="EUR" class="flag__bg flag__bg--be">Belgium (EUR)</button>
+										<button name="Brazil (BRL)" value="BRL" class="flag__bg flag__bg--br">Brazil (BRL)</button>
+										<button name="Brunei Darussalam (BND)" value="BND" class="flag__bg flag__bg--bn">Brunei Darussalam (BND)</button>
+										<button name="Canada (CAD)" value="CAD" class="flag__bg flag__bg--ca">Canada (CAD)</button>
+										<button name="Chile (CLP)" value="CLP" class="flag__bg flag__bg--cl">Chile (CLP)</button>
+										<button name="China (CNY)" value="CNY" class="flag__bg flag__bg--cn">China (CNY)</button>
+										<button name="Cyprus (EUR)" value="EUR" class="flag__bg flag__bg--cy">Cyprus (EUR)</button>
+										<button name="Czech Republic (CZK)" value="CZK" class="flag__bg flag__bg--cz">Czech Republic (CZK)</button>
+										<button name="Denmark (DKK)" value="DKK" class="flag__bg flag__bg--dk">Denmark (DKK)</button>
+										<button name="Estonia (EUR)" value="EUR" class="flag__bg flag__bg--ee">Estonia (EUR)</button>
+										<button name="Fiji (FJD)" value="FJD" class="flag__bg flag__bg--fj">Fiji (FJD)</button>
+										<button name="Finland (EUR)" value="EUR" class="flag__bg flag__bg--fi">Finland (EUR)</button>
+										<button name="France (EUR)" value="EUR" class="flag__bg flag__bg--fr">France (EUR)</button>
+										<button name="French Polynesia (XPF)" value="XPF" class="flag__bg flag__bg--pf">French Polynesia (XPF)</button>
+										<button name="Germany (EUR)" value="EUR" class="flag__bg flag__bg--de">Germany (EUR)</button>
+										<button name="Greece (EUR)" value="EUR" class="flag__bg flag__bg--gr">Greece (EUR)</button>
+										<button name="Hong Kong (HKD)" value="HKD" class="flag__bg flag__bg--hk">Hong Kong (HKD)</button>
+										<button name="Hungary (HUF)" value="HUF" class="flag__bg flag__bg--hu">Hungary (HUF)</button>
+										<button name="Indonesia (IDR)" value="IDR" class="flag__bg flag__bg--id">Indonesia (IDR)</button>
+										<button name="Ireland (EUR)" value="EUR" class="flag__bg flag__bg--ie">Ireland (EUR)</button>
+										<button name="Israel (ILS)" value="ILS" class="flag__bg flag__bg--il">Israel (ILS)</button>
+										<button name="Italy (EUR)" value="EUR" class="flag__bg flag__bg--it">Italy (EUR)</button>
+										<button name="Japan (JPY)" value="JPY" class="flag__bg flag__bg--jp">Japan (JPY)</button>
+										<button name="Kuwait (KWD)" value="KWD" class="flag__bg flag__bg--kw">Kuwait (KWD)</button>
+										<button name="Luxembourg (EUR)" value="EUR" class="flag__bg flag__bg--lu">Luxembourg (EUR)</button>
+										<button name="Malaysia (MYR)" value="MYR" class="flag__bg flag__bg--my">Malaysia (MYR)</button>
+										<button name="Malta (EUR)" value="EUR" class="flag__bg flag__bg--mt">Malta (EUR)</button>
+										<button name="Mauritius (MUR)" value="MUR" class="flag__bg flag__bg--mu">Mauritius (MUR)</button>
+										<button name="Mexico (MXN)" value="MXN" class="flag__bg flag__bg--mx">Mexico (MXN)</button>
+										<button name="Monaco (EUR)" value="EUR" class="flag__bg flag__bg--mc">Monaco (EUR)</button>
+										<button name="Montenegro (EUR)" value="EUR" class="flag__bg flag__bg--me">Montenegro (EUR)</button>
+										<button name="Netherlands (EUR)" value="EUR" class="flag__bg flag__bg--nl">Netherlands (EUR)</button>
+										<button name="New Caledonia (XPF)" value="XPF" class="flag__bg flag__bg--nc">New Caledonia (XPF)</button>
+										<button name="New Zealand (NZD)" value="NZD" class="flag__bg flag__bg--nz">New Zealand (NZD)</button>
+										<button name="Norway (NOK)" value="NOK" class="flag__bg flag__bg--no">Norway (NOK)</button>
+										<button name="Oman (OMR)" value="OMR" class="flag__bg flag__bg--om">Oman (OMR)</button>
+										<button name="Papua New Guinea (PGK)" value="PGK" class="flag__bg flag__bg--pg">Papua New Guinea (PGK)</button>
+										<button name="Philippines (PHP)" value="PHP" class="flag__bg flag__bg--ph">Philippines (PHP)</button>
+										<button name="Poland (PLN)" value="PLN" class="flag__bg flag__bg--pl">Poland (PLN)</button>
+										<button name="Portugal (EUR)" value="EUR" class="flag__bg flag__bg--pt">Portugal (EUR)</button>
+										<button name="Samoa (WST)" value="WST" class="flag__bg flag__bg--ws">Samoa (WST)</button>
+										<button name="San Marino (EUR)" value="EUR" class="flag__bg flag__bg--sm">San Marino (EUR)</button>
+										<button name="Saudi Arabia (SAR)" value="SAR" class="flag__bg flag__bg--sa">Saudi Arabia (SAR)</button>
+										<button name="Singapore (SGD)" value="SGD" class="flag__bg flag__bg--sg">Singapore (SGD)</button>
+										<button name="Slovakia (EUR)" value="EUR" class="flag__bg flag__bg--sk">Slovakia (EUR)</button>
+										<button name="Slovenia (EUR)" value="EUR" class="flag__bg flag__bg--si">Slovenia (EUR)</button>
+										<button name="Solomon Islands (SBD)" value="SBD" class="flag__bg flag__bg--sb">Solomon Islands (SBD)</button>
+										<button name="South Africa (ZAR)" value="ZAR" class="flag__bg flag__bg--za">South Africa (ZAR)</button>
+										<button name="South Korea (KRW)" value="KRW" class="flag__bg flag__bg--kr">South Korea (KRW)</button>
+										<button name="Spain (EUR)" value="EUR" class="flag__bg flag__bg--es">Spain (EUR)</button>
+										<button name="Sweden (SEK)" value="SEK" class="flag__bg flag__bg--se">Sweden (SEK)</button>
+										<button name="Switzerland (CHF)" value="CHF" class="flag__bg flag__bg--ch">Switzerland (CHF)</button>
+										<button name="Taiwan (TWD)" value="TWD" class="flag__bg flag__bg--tw">Taiwan (TWD)</button>
+										<button name="Thailand (THB)" value="THB" class="flag__bg flag__bg--th">Thailand (THB)</button>
+										<button name="Tonga (TOP)" value="TOP" class="flag__bg flag__bg--to">Tonga (TOP)</button>
+										<button name="Turkey (TRY)" value="TRY" class="flag__bg flag__bg--tr">Turkey (TRY)</button>
+										<button name="United Arab Emirates (AED)" value="AED" class="flag__bg flag__bg--ae">United Arab Emirates (AED)</button>
+										<button name="United Kingdom (GBP)" value="GBP" class="flag__bg flag__bg--gb">United Kingdom (GBP)</button>
+										<button name="USA (USD)" value="USD" class="flag__bg flag__bg--us">USA (USD)</button>
+										<button name="Vanuatu (VUV)" value="VUV" class="flag__bg flag__bg--vu">Vanuatu (VUV)</button>
+										<button name="Vietnam (VND)" value="VND" class="flag__bg flag__bg--vn">Vietnam (VND)</button>									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-12">
+							<label class="hero__calculator-label" for="toNumber">に</label>
+							<div class="hero__calculator-input input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">$</span>
+								</div>
+								<input type="text" class="form-control" aria-label="に">
+								<div class="input-group-append">
+									<span class="input-group-text" id="currency__to__dropdown-label">USD</span>
+								</div>
+							</div>
+							<div class="squeezer" id="currency__to__list">
+								<div class="hero__calculator-dropdown">
+									<div class="input-group">
+										<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency__to">
+										<label for="currency__to" class="input-group-append">
+											<span class="input-group-text"><i class="far fa-search fa-fw"></i></span>
+										</label>
+									</div>
+									<div class="hero__calculator-currencies">
+										<button name="Aland Islands (EUR)" value="EUR" class="flag__bg flag__bg--ax">Aland Islands (EUR)</button>
+										<button name="Andorra (EUR)" value="EUR" class="flag__bg flag__bg--ad">Andorra (EUR)</button>
+										<button name="Austria (EUR)" value="EUR" class="flag__bg flag__bg--at">Austria (EUR)</button>
+										<button name="Belgium (EUR)" value="EUR" class="flag__bg flag__bg--be">Belgium (EUR)</button>
+										<button name="Brazil (BRL)" value="BRL" class="flag__bg flag__bg--br">Brazil (BRL)</button>
+										<button name="Brunei Darussalam (BND)" value="BND" class="flag__bg flag__bg--bn">Brunei Darussalam (BND)</button>
+										<button name="Canada (CAD)" value="CAD" class="flag__bg flag__bg--ca">Canada (CAD)</button>
+										<button name="Chile (CLP)" value="CLP" class="flag__bg flag__bg--cl">Chile (CLP)</button>
+										<button name="China (CNY)" value="CNY" class="flag__bg flag__bg--cn">China (CNY)</button>
+										<button name="Cyprus (EUR)" value="EUR" class="flag__bg flag__bg--cy">Cyprus (EUR)</button>
+										<button name="Czech Republic (CZK)" value="CZK" class="flag__bg flag__bg--cz">Czech Republic (CZK)</button>
+										<button name="Denmark (DKK)" value="DKK" class="flag__bg flag__bg--dk">Denmark (DKK)</button>
+										<button name="Estonia (EUR)" value="EUR" class="flag__bg flag__bg--ee">Estonia (EUR)</button>
+										<button name="Fiji (FJD)" value="FJD" class="flag__bg flag__bg--fj">Fiji (FJD)</button>
+										<button name="Finland (EUR)" value="EUR" class="flag__bg flag__bg--fi">Finland (EUR)</button>
+										<button name="France (EUR)" value="EUR" class="flag__bg flag__bg--fr">France (EUR)</button>
+										<button name="French Polynesia (XPF)" value="XPF" class="flag__bg flag__bg--pf">French Polynesia (XPF)</button>
+										<button name="Germany (EUR)" value="EUR" class="flag__bg flag__bg--de">Germany (EUR)</button>
+										<button name="Greece (EUR)" value="EUR" class="flag__bg flag__bg--gr">Greece (EUR)</button>
+										<button name="Hong Kong (HKD)" value="HKD" class="flag__bg flag__bg--hk">Hong Kong (HKD)</button>
+										<button name="Hungary (HUF)" value="HUF" class="flag__bg flag__bg--hu">Hungary (HUF)</button>
+										<button name="Indonesia (IDR)" value="IDR" class="flag__bg flag__bg--id">Indonesia (IDR)</button>
+										<button name="Ireland (EUR)" value="EUR" class="flag__bg flag__bg--ie">Ireland (EUR)</button>
+										<button name="Israel (ILS)" value="ILS" class="flag__bg flag__bg--il">Israel (ILS)</button>
+										<button name="Italy (EUR)" value="EUR" class="flag__bg flag__bg--it">Italy (EUR)</button>
+										<button name="Japan (JPY)" value="JPY" class="flag__bg flag__bg--jp">Japan (JPY)</button>
+										<button name="Kuwait (KWD)" value="KWD" class="flag__bg flag__bg--kw">Kuwait (KWD)</button>
+										<button name="Luxembourg (EUR)" value="EUR" class="flag__bg flag__bg--lu">Luxembourg (EUR)</button>
+										<button name="Malaysia (MYR)" value="MYR" class="flag__bg flag__bg--my">Malaysia (MYR)</button>
+										<button name="Malta (EUR)" value="EUR" class="flag__bg flag__bg--mt">Malta (EUR)</button>
+										<button name="Mauritius (MUR)" value="MUR" class="flag__bg flag__bg--mu">Mauritius (MUR)</button>
+										<button name="Mexico (MXN)" value="MXN" class="flag__bg flag__bg--mx">Mexico (MXN)</button>
+										<button name="Monaco (EUR)" value="EUR" class="flag__bg flag__bg--mc">Monaco (EUR)</button>
+										<button name="Montenegro (EUR)" value="EUR" class="flag__bg flag__bg--me">Montenegro (EUR)</button>
+										<button name="Netherlands (EUR)" value="EUR" class="flag__bg flag__bg--nl">Netherlands (EUR)</button>
+										<button name="New Caledonia (XPF)" value="XPF" class="flag__bg flag__bg--nc">New Caledonia (XPF)</button>
+										<button name="New Zealand (NZD)" value="NZD" class="flag__bg flag__bg--nz">New Zealand (NZD)</button>
+										<button name="Norway (NOK)" value="NOK" class="flag__bg flag__bg--no">Norway (NOK)</button>
+										<button name="Oman (OMR)" value="OMR" class="flag__bg flag__bg--om">Oman (OMR)</button>
+										<button name="Papua New Guinea (PGK)" value="PGK" class="flag__bg flag__bg--pg">Papua New Guinea (PGK)</button>
+										<button name="Philippines (PHP)" value="PHP" class="flag__bg flag__bg--ph">Philippines (PHP)</button>
+										<button name="Poland (PLN)" value="PLN" class="flag__bg flag__bg--pl">Poland (PLN)</button>
+										<button name="Portugal (EUR)" value="EUR" class="flag__bg flag__bg--pt">Portugal (EUR)</button>
+										<button name="Samoa (WST)" value="WST" class="flag__bg flag__bg--ws">Samoa (WST)</button>
+										<button name="San Marino (EUR)" value="EUR" class="flag__bg flag__bg--sm">San Marino (EUR)</button>
+										<button name="Saudi Arabia (SAR)" value="SAR" class="flag__bg flag__bg--sa">Saudi Arabia (SAR)</button>
+										<button name="Singapore (SGD)" value="SGD" class="flag__bg flag__bg--sg">Singapore (SGD)</button>
+										<button name="Slovakia (EUR)" value="EUR" class="flag__bg flag__bg--sk">Slovakia (EUR)</button>
+										<button name="Slovenia (EUR)" value="EUR" class="flag__bg flag__bg--si">Slovenia (EUR)</button>
+										<button name="Solomon Islands (SBD)" value="SBD" class="flag__bg flag__bg--sb">Solomon Islands (SBD)</button>
+										<button name="South Africa (ZAR)" value="ZAR" class="flag__bg flag__bg--za">South Africa (ZAR)</button>
+										<button name="South Korea (KRW)" value="KRW" class="flag__bg flag__bg--kr">South Korea (KRW)</button>
+										<button name="Spain (EUR)" value="EUR" class="flag__bg flag__bg--es">Spain (EUR)</button>
+										<button name="Sweden (SEK)" value="SEK" class="flag__bg flag__bg--se">Sweden (SEK)</button>
+										<button name="Switzerland (CHF)" value="CHF" class="flag__bg flag__bg--ch">Switzerland (CHF)</button>
+										<button name="Taiwan (TWD)" value="TWD" class="flag__bg flag__bg--tw">Taiwan (TWD)</button>
+										<button name="Thailand (THB)" value="THB" class="flag__bg flag__bg--th">Thailand (THB)</button>
+										<button name="Tonga (TOP)" value="TOP" class="flag__bg flag__bg--to">Tonga (TOP)</button>
+										<button name="Turkey (TRY)" value="TRY" class="flag__bg flag__bg--tr">Turkey (TRY)</button>
+										<button name="United Arab Emirates (AED)" value="AED" class="flag__bg flag__bg--ae">United Arab Emirates (AED)</button>
+										<button name="United Kingdom (GBP)" value="GBP" class="flag__bg flag__bg--gb">United Kingdom (GBP)</button>
+										<button name="USA (USD)" value="USD" class="flag__bg flag__bg--us">USA (USD)</button>
+										<button name="Vanuatu (VUV)" value="VUV" class="flag__bg flag__bg--vu">Vanuatu (VUV)</button>
+										<button name="Vietnam (VND)" value="VND" class="flag__bg flag__bg--vn">Vietnam (VND)</button>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						オンラインレート: 1 USD = 120JPY
+						<small>
+							両替レート最終更新日 2018年 7月 20日 金曜日 10:34:23 日本標準時
+						</small>
+					</div>
+					<button type="submit" class="btn btn-crimson btn-block btn-lg">
+						購入手続きを行う
+					</button>
+				</form>
+				<div class="hero__credentials d-none d-lg-flex">
+					<div>
+						<i class="fa fa-yen-sign"></i>
+						<img src="assets/img/logo__canstar.png" alt=""><br>
+						<em>¡</em>写すよ北蓄写どぎ住決ホネ。
+					</div>
+					<div>
+						<img src="assets/img/logo__canstar.png" alt=""><br>
+						<em>¡</em>ルタスヌ基正ぽ真済ミソ議確みぼ。
+					</div>
+					<div>
+						<img src="assets/img/logo__canstar.png" alt=""><br>
+						<em>¡</em>セス迎車敗つわ性断ソケルヲ率響5案。
+					</div>
+				</div>
+			</div>
+			<div class="hero__carousel d-none d-lg-block col-lg-7">
+				<div class="carousel__container">
+					<div class="carousel">
+						<input class="carousel__activator" type="radio" id="A" name="heroCarousel" checked>
+						<div class="carousel__slide" style="background-image: url(assets/img/hero__stock-1.jpg);">
+							<a href="#" class="carousel__content">
+								<h1>
+									オンライン<br>
+									で外貨購入
+								</h1>
+								<p>
+									ご自宅・職場へ宅配<br>
+									店舗で戸『取りもOK!<br>
+									便利な外貨宅配サービスを是非ご申」用ください。
+								</p>
+							</a>
+						</div>
+						<input class="carousel__activator" type="radio" id="B" name="heroCarousel">
+						<div class="carousel__slide" style="background-image: url(assets/img/hero__stock-2.jpg);">
+							<a href="#" class="carousel__content">
+								<h2>
+									<em>¡</em>称づすきぞ自玲<br>
+									氏がゅ力経づろ夢速ワ
+								</h2>
+								<p>
+									<em>¡</em>統青開掲ばッむけ市様す難交型ヒネノ買圧ごえへち。<br>
+									弾反ネ今研ざ耳会濤ネ代紋クふがょ明過クヨ。<br>
+									氏がゅ力経づろ夢速ワマエ済司ぴごで。
+								</p>
+							</a>
+						</div>
+						<input class="carousel__activator" type="radio" id="C" name="heroCarousel">
+						<div class="carousel__slide" style="background-image: url(assets/img/hero__stock-3.jpg);">
+							<a href="#" class="carousel__content">
+								<h2>
+									<em>¡</em>型ミコホ北供サエ時ホタニレ庁<br>
+									弾反ネ今研
+								</h2>
+								<p>
+									<em>¡</em>弾反ネ今研ざ耳会濤ネ代紋クふがょ明過クヨ。<br>
+									記オメ給5報ホライセ情投ユコヨ賀公ぴおゅょ住18豊リメ殺込川テ率。<br>
+									験文る煙病ねい裁択エフ。
+								</p>
+							</a>
+						</div>
+						<input class="carousel__activator" type="radio" id="D" name="heroCarousel">
+						<div class="carousel__slide" style="background-image: url(assets/img/hero__stock-4.jpg);">
+							<a href="#" class="carousel__content">
+								<h2>
+									<em>¡</em>ネ田記やイひな四<br>
+									弾反ネ今研
+								</h2>
+								<p>
+									<em>¡</em>青丁いてつぜ。<br>
+									17回ゅンぴ努音ンちつ性今務聞てぐし中よきば架型掛焼詐ンふさ。<br>
+									弾反ネ今研ざ耳会濤ネ代紋クふがょ明過クヨ。
+								</p>
+							</a>
+						</div>
+						<div class="carousel__indicators">
+							<label class="carousel__indicator" for="A"></label>
+							<label class="carousel__indicator" for="B"></label>
+							<label class="carousel__indicator" for="C"></label>
+							<label class="carousel__indicator" for="D"></label>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
-<br>xxx
+</section><section class="ticker">
+	<div class="container-fluid">
+		<h2 class="text-center">本日のオンラインレート</h2>
+		<div class="carousel__container">
+			<div class="carousel">
+				<input class="carousel__activator" type="radio" id="A" name="tickerCarousel" checked>
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/AD.png" alt="" class="ticker__flag">
+							<small>AD</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/AE.png" alt="" class="ticker__flag">
+							<small>AE</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/AT.png" alt="" class="ticker__flag">
+							<small>AT</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/AU.png" alt="" class="ticker__flag">
+							<small>AU</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/AX.png" alt="" class="ticker__flag">
+							<small>AX</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/BE.png" alt="" class="ticker__flag">
+							<small>BE</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/BL.png" alt="" class="ticker__flag">
+							<small>BL</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/BN.png" alt="" class="ticker__flag">
+							<small>BN</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/BR.png" alt="" class="ticker__flag">
+							<small>BR</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/CA.png" alt="" class="ticker__flag">
+							<small>CA</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/CH.png" alt="" class="ticker__flag">
+							<small>CH</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/CL.png" alt="" class="ticker__flag">
+							<small>CL</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/CN.png" alt="" class="ticker__flag">
+							<small>CN</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/CY.png" alt="" class="ticker__flag">
+							<small>CY</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/CZ.png" alt="" class="ticker__flag">
+							<small>CZ</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/DE.png" alt="" class="ticker__flag">
+							<small>DE</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/DK.png" alt="" class="ticker__flag">
+							<small>DK</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/EE.png" alt="" class="ticker__flag">
+							<small>EE</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/ES.png" alt="" class="ticker__flag">
+							<small>ES</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/EU.png" alt="" class="ticker__flag">
+							<small>EU</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/FI.png" alt="" class="ticker__flag">
+							<small>FI</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/FJ.png" alt="" class="ticker__flag">
+							<small>FJ</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/FR.png" alt="" class="ticker__flag">
+							<small>FR</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/GB.png" alt="" class="ticker__flag">
+							<small>GB</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/GF.png" alt="" class="ticker__flag">
+							<small>GF</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/GP.png" alt="" class="ticker__flag">
+							<small>GP</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/GR.png" alt="" class="ticker__flag">
+							<small>GR</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/HK.png" alt="" class="ticker__flag">
+							<small>HK</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/HU.png" alt="" class="ticker__flag">
+							<small>HU</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/ID.png" alt="" class="ticker__flag">
+							<small>ID</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/IE.png" alt="" class="ticker__flag">
+							<small>IE</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/IL.png" alt="" class="ticker__flag">
+							<small>IL</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/IT.png" alt="" class="ticker__flag">
+							<small>IT</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/JP.png" alt="" class="ticker__flag">
+							<small>JP</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/KR.png" alt="" class="ticker__flag">
+							<small>KR</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/KW.png" alt="" class="ticker__flag">
+							<small>KW</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/LU.png" alt="" class="ticker__flag">
+							<small>LU</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/MC.png" alt="" class="ticker__flag">
+							<small>MC</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/ME.png" alt="" class="ticker__flag">
+							<small>ME</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/MF.png" alt="" class="ticker__flag">
+							<small>MF</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/MQ.png" alt="" class="ticker__flag">
+							<small>MQ</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/MT.png" alt="" class="ticker__flag">
+							<small>MT</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/MU.png" alt="" class="ticker__flag">
+							<small>MU</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/MX.png" alt="" class="ticker__flag">
+							<small>MX</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/MY.png" alt="" class="ticker__flag">
+							<small>MY</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/NC.png" alt="" class="ticker__flag">
+							<small>NC</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/NL.png" alt="" class="ticker__flag">
+							<small>NL</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/NO.png" alt="" class="ticker__flag">
+							<small>NO</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/NZ.png" alt="" class="ticker__flag">
+							<small>NZ</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/OM.png" alt="" class="ticker__flag">
+							<small>OM</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/PF.png" alt="" class="ticker__flag">
+							<small>PF</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/PG.png" alt="" class="ticker__flag">
+							<small>PG</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/PH.png" alt="" class="ticker__flag">
+							<small>PH</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/PL.png" alt="" class="ticker__flag">
+							<small>PL</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/PT.png" alt="" class="ticker__flag">
+							<small>PT</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/SA.png" alt="" class="ticker__flag">
+							<small>SA</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/SB.png" alt="" class="ticker__flag">
+							<small>SB</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/SE.png" alt="" class="ticker__flag">
+							<small>SE</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/SG.png" alt="" class="ticker__flag">
+							<small>SG</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/SI.png" alt="" class="ticker__flag">
+							<small>SI</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/SK.png" alt="" class="ticker__flag">
+							<small>SK</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/SM.png" alt="" class="ticker__flag">
+							<small>SM</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/TF.png" alt="" class="ticker__flag">
+							<small>TF</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/TH.png" alt="" class="ticker__flag">
+							<small>TH</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/TO.png" alt="" class="ticker__flag">
+							<small>TO</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/TR.png" alt="" class="ticker__flag">
+							<small>TR</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/TW.png" alt="" class="ticker__flag">
+							<small>TW</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/US.png" alt="" class="ticker__flag">
+							<small>US</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/VA.png" alt="" class="ticker__flag">
+							<small>VA</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/VN.png" alt="" class="ticker__flag">
+							<small>VN</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/VU.png" alt="" class="ticker__flag">
+							<small>VU</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/WS.png" alt="" class="ticker__flag">
+							<small>WS</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+				<input class="carousel__activator" type="radio" name="tickerCarousel">
+				<div class="carousel__slide">
+					<div class="carousel__content">
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/YT.png" alt="" class="ticker__flag">
+							<small>YT</small><br>
+							0.0090
+						</a>
+						<a href="#" class="ticker__currency">
+							<img src="assets/img/flags/ZA.png" alt="" class="ticker__flag">
+							<small>ZA</small><br>
+							0.0090
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center">
+			<button class="btn btn-outline-crimson">詳細</button>
+		</div>
+	</div>
+</section>
+<script>
+	document.documentElement.style.setProperty('--scrollbar', window.innerWidth - document.documentElement.clientWidth + 'px');
+	function canWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}canWebP()?document.body.className+=" webp":document.body.className+=" jpg";
+	var images = [ ];
+	var toLoad = images.length;
+	for (var i = 0; i < images.length; i++) {
+		var image = new Image();
+		image.src = 'assets/img/' + images[i];
+		image.onload = function() {
+			toLoad--;
+			if (!toLoad) document.body.className+=" animate";
+		};
+	}
+</script>
+<script type="text/javascript" src="assets/js/all.js"></script>
 
 </body>
 </html>

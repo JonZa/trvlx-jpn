@@ -1,0 +1,1 @@
+var filter=function(e){for(var t=e.input.value,n=0;n<e.targets.length;n++){var r=e.targets[n],a=r.name;if(t.length){var l=a.toUpperCase().indexOf(t.toUpperCase());l>-1?(r.style.display="block",r.innerHTML=currencyDropdown.strong(a,t,l)):(r.style.display="none",r.textContent=a)}else r.style.display="block",r.textContent=a}};

@@ -32,256 +32,262 @@
 								<div class="input-group-prepend">
 									<span class="input-group-text">$</span>
 								</div>
-								<input type="text" class="form-control" aria-label="に">
-								<label class="input-group-append" id="currency__from__dropdown-label">
+								<input type="number" class="form-control" id="currency-from__amount" aria-label="に" data-operation="multiply" value="1">
+								<label class="input-group-append" id="currency-from__dropdown-label">
 									<img src="assets/img/flags/JP.png" alt="" class="hero__calculator-flag">
 									<span class="input-group-text">JPY</span>
 								</label>
 							</div>
-							<div class="squeezer" id="currency__from__list">
+							<div class="squeezer" id="currency-from__list">
 								<div class="hero__calculator-dropdown">
 									<div class="input-group">
-										<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency__from">
-										<label for="currency__from" class="input-group-append">
+										<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency-from">
+										<label for="currency-from" class="input-group-append">
 											<span class="input-group-text"><i class="far fa-search fa-fw"></i></span>
 										</label>
 									</div>
 									<div class="hero__calculator-currencies">
-										<button name="Aland Islands (EUR)" value="EUR" data-country="AX" data-rate="1.5">
-											<img src="assets/img/flags/AX.png" alt="Aland Islands" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Aland Islands (EUR)
-											</span>
-										</button>
-										<button name="Andorra (EUR)" value="EUR" data-country="AD" data-rate="1.5">
-											<img src="assets/img/flags/AD.png" alt="Andorra" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Andorra (EUR)
-											</span>
-										</button>
-										<button name="Austria (EUR)" value="EUR" data-country="AT" data-rate="1.5">
-											<img src="assets/img/flags/AT.png" alt="Austria" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Austria (EUR)
-											</span>
-										</button>
-										<button name="Belgium (EUR)" value="EUR" data-country="BE" data-rate="1.5">
-											<img src="assets/img/flags/BE.png" alt="Belgium" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Belgium (EUR)
-											</span>
-										</button>
-										<button name="Brazil (BRL)" value="BRL" data-country="BR" data-rate="1.5">
-											<img src="assets/img/flags/BR.png" alt="Brazil" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Brazil (BRL)
-											</span>
-										</button>
-										<button name="Brunei Darussalam (BND)" value="BND" data-country="BN" data-rate="1.5">
-											<img src="assets/img/flags/BN.png" alt="Brunei Darussalam" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Brunei Darussalam (BND)
-											</span>
-										</button>
-										<button name="Canada (CAD)" value="CAD" data-country="CA" data-rate="1.5">
-											<img src="assets/img/flags/CA.png" alt="Canada" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Canada (CAD)
-											</span>
-										</button>
-										<button name="Chile (CLP)" value="CLP" data-country="CL" data-rate="1.5">
-											<img src="assets/img/flags/CL.png" alt="Chile" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Chile (CLP)
-											</span>
-										</button>
-										<button name="China (CNY)" value="CNY" data-country="CN" data-rate="1.5">
-											<img src="assets/img/flags/CN.png" alt="China" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												China (CNY)
-											</span>
-										</button>
-										<button name="Cyprus (EUR)" value="EUR" data-country="CY" data-rate="1.5">
-											<img src="assets/img/flags/CY.png" alt="Cyprus" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Cyprus (EUR)
-											</span>
-										</button>
-										<button name="Czech Republic (CZK)" value="CZK" data-country="CZ" data-rate="1.5">
-											<img src="assets/img/flags/CZ.png" alt="Czech Republic" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Czech Republic (CZK)
-											</span>
-										</button>
-										<button name="Denmark (DKK)" value="DKK" data-country="DK" data-rate="1.5">
-											<img src="assets/img/flags/DK.png" alt="Denmark" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Denmark (DKK)
-											</span>
-										</button>
-										<button name="Estonia (EUR)" value="EUR" data-country="EE" data-rate="1.5">
-											<img src="assets/img/flags/EE.png" alt="Estonia" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Estonia (EUR)
-											</span>
-										</button>
-										<button name="Fiji (FJD)" value="FJD" data-country="FJ" data-rate="1.5">
-											<img src="assets/img/flags/FJ.png" alt="Fiji" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Fiji (FJD)
-											</span>
-										</button>
-										<button name="Finland (EUR)" value="EUR" data-country="FI" data-rate="1.5">
-											<img src="assets/img/flags/FI.png" alt="Finland" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Finland (EUR)
-											</span>
-										</button>
-										<button name="France (EUR)" value="EUR" data-country="FR" data-rate="1.5">
-											<img src="assets/img/flags/FR.png" alt="France" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												France (EUR)
-											</span>
-										</button>
-										<button name="French Polynesia (XPF)" value="XPF" data-country="PF" data-rate="1.5">
-											<img src="assets/img/flags/PF.png" alt="French Polynesia" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												French Polynesia (XPF)
-											</span>
-										</button>
-										<button name="Germany (EUR)" value="EUR" data-country="DE" data-rate="1.5">
-											<img src="assets/img/flags/DE.png" alt="Germany" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Germany (EUR)
-											</span>
-										</button>
-										<button name="Greece (EUR)" value="EUR" data-country="GR" data-rate="1.5">
-											<img src="assets/img/flags/GR.png" alt="Greece" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Greece (EUR)
-											</span>
-										</button>
-										<button name="Hong Kong (HKD)" value="HKD" data-country="HK" data-rate="1.5">
-											<img src="assets/img/flags/HK.png" alt="Hong Kong" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Hong Kong (HKD)
-											</span>
-										</button>
-										<button name="Hungary (HUF)" value="HUF" data-country="HU" data-rate="1.5">
-											<img src="assets/img/flags/HU.png" alt="Hungary" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Hungary (HUF)
-											</span>
-										</button>
-										<button name="Indonesia (IDR)" value="IDR" data-country="ID" data-rate="1.5">
-											<img src="assets/img/flags/ID.png" alt="Indonesia" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Indonesia (IDR)
-											</span>
-										</button>
-										<button name="Ireland (EUR)" value="EUR" data-country="IE" data-rate="1.5">
-											<img src="assets/img/flags/IE.png" alt="Ireland" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Ireland (EUR)
-											</span>
-										</button>
-										<button name="Israel (ILS)" value="ILS" data-country="IL" data-rate="1.5">
-											<img src="assets/img/flags/IL.png" alt="Israel" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Israel (ILS)
-											</span>
-										</button>
-										<button name="Italy (EUR)" value="EUR" data-country="IT" data-rate="1.5">
-											<img src="assets/img/flags/IT.png" alt="Italy" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Italy (EUR)
-											</span>
-										</button>
-										<button name="Japan (JPY)" value="JPY" data-country="JP" data-rate="1.5">
+										<button name="Japan (JPY)" value="JPY" data-country="JP" data-rate="1">
 											<img src="assets/img/flags/JP.png" alt="Japan" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Japan (JPY)
 											</span>
 										</button>
-										<button name="Kuwait (KWD)" value="KWD" data-country="KW" data-rate="1.5">
+										<button name="USA (USD)" value="USD" data-country="US" data-rate="2">
+											<img src="assets/img/flags/US.png" alt="USA" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												USA (USD)
+											</span>
+										</button>
+										<button name="Aland Islands (EUR)" value="EUR" data-country="AX" data-rate="3">
+											<img src="assets/img/flags/AX.png" alt="Aland Islands" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Aland Islands (EUR)
+											</span>
+										</button>
+										<button name="Andorra (EUR)" value="EUR" data-country="AD" data-rate="4">
+											<img src="assets/img/flags/AD.png" alt="Andorra" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Andorra (EUR)
+											</span>
+										</button>
+										<button name="Austria (EUR)" value="EUR" data-country="AT" data-rate="5">
+											<img src="assets/img/flags/AT.png" alt="Austria" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Austria (EUR)
+											</span>
+										</button>
+										<button name="Belgium (EUR)" value="EUR" data-country="BE" data-rate="6">
+											<img src="assets/img/flags/BE.png" alt="Belgium" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Belgium (EUR)
+											</span>
+										</button>
+										<button name="Brazil (BRL)" value="BRL" data-country="BR" data-rate="7">
+											<img src="assets/img/flags/BR.png" alt="Brazil" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Brazil (BRL)
+											</span>
+										</button>
+										<button name="Brunei Darussalam (BND)" value="BND" data-country="BN" data-rate="8">
+											<img src="assets/img/flags/BN.png" alt="Brunei Darussalam" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Brunei Darussalam (BND)
+											</span>
+										</button>
+										<button name="Canada (CAD)" value="CAD" data-country="CA" data-rate="9">
+											<img src="assets/img/flags/CA.png" alt="Canada" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Canada (CAD)
+											</span>
+										</button>
+										<button name="Chile (CLP)" value="CLP" data-country="CL" data-rate="10">
+											<img src="assets/img/flags/CL.png" alt="Chile" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Chile (CLP)
+											</span>
+										</button>
+										<button name="China (CNY)" value="CNY" data-country="CN" data-rate="11">
+											<img src="assets/img/flags/CN.png" alt="China" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												China (CNY)
+											</span>
+										</button>
+										<button name="Cyprus (EUR)" value="EUR" data-country="CY" data-rate="12">
+											<img src="assets/img/flags/CY.png" alt="Cyprus" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Cyprus (EUR)
+											</span>
+										</button>
+										<button name="Czech Republic (CZK)" value="CZK" data-country="CZ" data-rate="13">
+											<img src="assets/img/flags/CZ.png" alt="Czech Republic" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Czech Republic (CZK)
+											</span>
+										</button>
+										<button name="Denmark (DKK)" value="DKK" data-country="DK" data-rate="14">
+											<img src="assets/img/flags/DK.png" alt="Denmark" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Denmark (DKK)
+											</span>
+										</button>
+										<button name="Estonia (EUR)" value="EUR" data-country="EE" data-rate="14">
+											<img src="assets/img/flags/EE.png" alt="Estonia" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Estonia (EUR)
+											</span>
+										</button>
+										<button name="Fiji (FJD)" value="FJD" data-country="FJ" data-rate="15">
+											<img src="assets/img/flags/FJ.png" alt="Fiji" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Fiji (FJD)
+											</span>
+										</button>
+										<button name="Finland (EUR)" value="EUR" data-country="FI" data-rate="16">
+											<img src="assets/img/flags/FI.png" alt="Finland" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Finland (EUR)
+											</span>
+										</button>
+										<button name="France (EUR)" value="EUR" data-country="FR" data-rate="16">
+											<img src="assets/img/flags/FR.png" alt="France" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												France (EUR)
+											</span>
+										</button>
+										<button name="French Polynesia (XPF)" value="XPF" data-country="PF" data-rate="17">
+											<img src="assets/img/flags/PF.png" alt="French Polynesia" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												French Polynesia (XPF)
+											</span>
+										</button>
+										<button name="Germany (EUR)" value="EUR" data-country="DE" data-rate="18">
+											<img src="assets/img/flags/DE.png" alt="Germany" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Germany (EUR)
+											</span>
+										</button>
+										<button name="Greece (EUR)" value="EUR" data-country="GR" data-rate="19">
+											<img src="assets/img/flags/GR.png" alt="Greece" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Greece (EUR)
+											</span>
+										</button>
+										<button name="Hong Kong (HKD)" value="HKD" data-country="HK" data-rate="20">
+											<img src="assets/img/flags/HK.png" alt="Hong Kong" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Hong Kong (HKD)
+											</span>
+										</button>
+										<button name="Hungary (HUF)" value="HUF" data-country="HU" data-rate="21">
+											<img src="assets/img/flags/HU.png" alt="Hungary" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Hungary (HUF)
+											</span>
+										</button>
+										<button name="Indonesia (IDR)" value="IDR" data-country="ID" data-rate="22">
+											<img src="assets/img/flags/ID.png" alt="Indonesia" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Indonesia (IDR)
+											</span>
+										</button>
+										<button name="Ireland (EUR)" value="EUR" data-country="IE" data-rate="23">
+											<img src="assets/img/flags/IE.png" alt="Ireland" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Ireland (EUR)
+											</span>
+										</button>
+										<button name="Israel (ILS)" value="ILS" data-country="IL" data-rate="24">
+											<img src="assets/img/flags/IL.png" alt="Israel" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Israel (ILS)
+											</span>
+										</button>
+										<button name="Italy (EUR)" value="EUR" data-country="IT" data-rate="25">
+											<img src="assets/img/flags/IT.png" alt="Italy" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Italy (EUR)
+											</span>
+										</button>
+										<button name="Kuwait (KWD)" value="KWD" data-country="KW" data-rate="27">
 											<img src="assets/img/flags/KW.png" alt="Kuwait" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Kuwait (KWD)
 											</span>
 										</button>
-										<button name="Luxembourg (EUR)" value="EUR" data-country="LU" data-rate="1.5">
+										<button name="Luxembourg (EUR)" value="EUR" data-country="LU" data-rate="28">
 											<img src="assets/img/flags/LU.png" alt="Luxembourg" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Luxembourg (EUR)
 											</span>
 										</button>
-										<button name="Malaysia (MYR)" value="MYR" data-country="MY" data-rate="1.5">
+										<button name="Malaysia (MYR)" value="MYR" data-country="MY" data-rate="29">
 											<img src="assets/img/flags/MY.png" alt="Malaysia" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Malaysia (MYR)
 											</span>
 										</button>
-										<button name="Malta (EUR)" value="EUR" data-country="MT" data-rate="1.5">
+										<button name="Malta (EUR)" value="EUR" data-country="MT" data-rate="0.9">
 											<img src="assets/img/flags/MT.png" alt="Malta" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Malta (EUR)
 											</span>
 										</button>
-										<button name="Mauritius (MUR)" value="MUR" data-country="MU" data-rate="1.5">
+										<button name="Mauritius (MUR)" value="MUR" data-country="MU" data-rate="0.8">
 											<img src="assets/img/flags/MU.png" alt="Mauritius" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Mauritius (MUR)
 											</span>
 										</button>
-										<button name="Mexico (MXN)" value="MXN" data-country="MX" data-rate="1.5">
+										<button name="Mexico (MXN)" value="MXN" data-country="MX" data-rate="0.7">
 											<img src="assets/img/flags/MX.png" alt="Mexico" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Mexico (MXN)
 											</span>
 										</button>
-										<button name="Monaco (EUR)" value="EUR" data-country="MC" data-rate="1.5">
+										<button name="Monaco (EUR)" value="EUR" data-country="MC" data-rate="0.6">
 											<img src="assets/img/flags/MC.png" alt="Monaco" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Monaco (EUR)
 											</span>
 										</button>
-										<button name="Montenegro (EUR)" value="EUR" data-country="ME" data-rate="1.5">
+										<button name="Montenegro (EUR)" value="EUR" data-country="ME" data-rate="0.5">
 											<img src="assets/img/flags/ME.png" alt="Montenegro" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Montenegro (EUR)
 											</span>
 										</button>
-										<button name="Netherlands (EUR)" value="EUR" data-country="NL" data-rate="1.5">
+										<button name="Netherlands (EUR)" value="EUR" data-country="NL" data-rate="0.4">
 											<img src="assets/img/flags/NL.png" alt="Netherlands" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Netherlands (EUR)
 											</span>
 										</button>
-										<button name="New Caledonia (XPF)" value="XPF" data-country="NC" data-rate="1.5">
+										<button name="New Caledonia (XPF)" value="XPF" data-country="NC" data-rate="0.3">
 											<img src="assets/img/flags/NC.png" alt="New Caledonia" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												New Caledonia (XPF)
 											</span>
 										</button>
-										<button name="New Zealand (NZD)" value="NZD" data-country="NZ" data-rate="1.5">
+										<button name="New Zealand (NZD)" value="NZD" data-country="NZ" data-rate="0.2">
 											<img src="assets/img/flags/NZ.png" alt="New Zealand" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												New Zealand (NZD)
 											</span>
 										</button>
-										<button name="Norway (NOK)" value="NOK" data-country="NO" data-rate="1.5">
+										<button name="Norway (NOK)" value="NOK" data-country="NO" data-rate="0.1">
 											<img src="assets/img/flags/NO.png" alt="Norway" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Norway (NOK)
 											</span>
 										</button>
-										<button name="Oman (OMR)" value="OMR" data-country="OM" data-rate="1.5">
+										<button name="Oman (OMR)" value="OMR" data-country="OM" data-rate="0.05">
 											<img src="assets/img/flags/OM.png" alt="Oman" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Oman (OMR)
 											</span>
 										</button>
-										<button name="Papua New Guinea (PGK)" value="PGK" data-country="PG" data-rate="1.5">
+										<button name="Papua New Guinea (PGK)" value="PGK" data-country="PG" data-rate="0.005">
 											<img src="assets/img/flags/PG.png" alt="Papua New Guinea" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Papua New Guinea (PGK)
@@ -411,12 +417,6 @@
 											<img src="assets/img/flags/GB.png" alt="United Kingdom" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												United Kingdom (GBP)
-											</span>
-										</button>
-										<button name="USA (USD)" value="USD" data-country="US" data-rate="1.5">
-											<img src="assets/img/flags/US.png" alt="USA" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												USA (USD)
 											</span>
 										</button>
 										<button name="Vanuatu (VUV)" value="VUV" data-country="VU" data-rate="1.5">
@@ -440,256 +440,262 @@
 								<div class="input-group-prepend">
 									<span class="input-group-text">$</span>
 								</div>
-								<input type="text" class="form-control" aria-label="に">
-								<label class="input-group-append" id="currency__to__dropdown-label">
+								<input type="number" class="form-control" id="currency-to__amount" aria-label="に" data-operation="divide" value="1">
+								<label class="input-group-append" id="currency-to__dropdown-label">
 									<img src="assets/img/flags/US.png" alt="" class="hero__calculator-flag">
 									<span class="input-group-text">USD</span>
 								</label>
 							</div>
-							<div class="squeezer" id="currency__to__list">
+							<div class="squeezer" id="currency-to__list">
 								<div class="hero__calculator-dropdown">
 									<div class="input-group">
-										<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency__to">
-										<label for="currency__to" class="input-group-append">
+										<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency-to">
+										<label for="currency-to" class="input-group-append">
 											<span class="input-group-text"><i class="far fa-search fa-fw"></i></span>
 										</label>
 									</div>
 									<div class="hero__calculator-currencies">
-										<button name="Aland Islands (EUR)" value="EUR" data-country="AX" data-rate="1.5">
-											<img src="assets/img/flags/AX.png" alt="Aland Islands" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Aland Islands (EUR)
-											</span>
-										</button>
-										<button name="Andorra (EUR)" value="EUR" data-country="AD" data-rate="1.5">
-											<img src="assets/img/flags/AD.png" alt="Andorra" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Andorra (EUR)
-											</span>
-										</button>
-										<button name="Austria (EUR)" value="EUR" data-country="AT" data-rate="1.5">
-											<img src="assets/img/flags/AT.png" alt="Austria" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Austria (EUR)
-											</span>
-										</button>
-										<button name="Belgium (EUR)" value="EUR" data-country="BE" data-rate="1.5">
-											<img src="assets/img/flags/BE.png" alt="Belgium" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Belgium (EUR)
-											</span>
-										</button>
-										<button name="Brazil (BRL)" value="BRL" data-country="BR" data-rate="1.5">
-											<img src="assets/img/flags/BR.png" alt="Brazil" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Brazil (BRL)
-											</span>
-										</button>
-										<button name="Brunei Darussalam (BND)" value="BND" data-country="BN" data-rate="1.5">
-											<img src="assets/img/flags/BN.png" alt="Brunei Darussalam" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Brunei Darussalam (BND)
-											</span>
-										</button>
-										<button name="Canada (CAD)" value="CAD" data-country="CA" data-rate="1.5">
-											<img src="assets/img/flags/CA.png" alt="Canada" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Canada (CAD)
-											</span>
-										</button>
-										<button name="Chile (CLP)" value="CLP" data-country="CL" data-rate="1.5">
-											<img src="assets/img/flags/CL.png" alt="Chile" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Chile (CLP)
-											</span>
-										</button>
-										<button name="China (CNY)" value="CNY" data-country="CN" data-rate="1.5">
-											<img src="assets/img/flags/CN.png" alt="China" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												China (CNY)
-											</span>
-										</button>
-										<button name="Cyprus (EUR)" value="EUR" data-country="CY" data-rate="1.5">
-											<img src="assets/img/flags/CY.png" alt="Cyprus" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Cyprus (EUR)
-											</span>
-										</button>
-										<button name="Czech Republic (CZK)" value="CZK" data-country="CZ" data-rate="1.5">
-											<img src="assets/img/flags/CZ.png" alt="Czech Republic" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Czech Republic (CZK)
-											</span>
-										</button>
-										<button name="Denmark (DKK)" value="DKK" data-country="DK" data-rate="1.5">
-											<img src="assets/img/flags/DK.png" alt="Denmark" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Denmark (DKK)
-											</span>
-										</button>
-										<button name="Estonia (EUR)" value="EUR" data-country="EE" data-rate="1.5">
-											<img src="assets/img/flags/EE.png" alt="Estonia" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Estonia (EUR)
-											</span>
-										</button>
-										<button name="Fiji (FJD)" value="FJD" data-country="FJ" data-rate="1.5">
-											<img src="assets/img/flags/FJ.png" alt="Fiji" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Fiji (FJD)
-											</span>
-										</button>
-										<button name="Finland (EUR)" value="EUR" data-country="FI" data-rate="1.5">
-											<img src="assets/img/flags/FI.png" alt="Finland" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Finland (EUR)
-											</span>
-										</button>
-										<button name="France (EUR)" value="EUR" data-country="FR" data-rate="1.5">
-											<img src="assets/img/flags/FR.png" alt="France" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												France (EUR)
-											</span>
-										</button>
-										<button name="French Polynesia (XPF)" value="XPF" data-country="PF" data-rate="1.5">
-											<img src="assets/img/flags/PF.png" alt="French Polynesia" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												French Polynesia (XPF)
-											</span>
-										</button>
-										<button name="Germany (EUR)" value="EUR" data-country="DE" data-rate="1.5">
-											<img src="assets/img/flags/DE.png" alt="Germany" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Germany (EUR)
-											</span>
-										</button>
-										<button name="Greece (EUR)" value="EUR" data-country="GR" data-rate="1.5">
-											<img src="assets/img/flags/GR.png" alt="Greece" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Greece (EUR)
-											</span>
-										</button>
-										<button name="Hong Kong (HKD)" value="HKD" data-country="HK" data-rate="1.5">
-											<img src="assets/img/flags/HK.png" alt="Hong Kong" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Hong Kong (HKD)
-											</span>
-										</button>
-										<button name="Hungary (HUF)" value="HUF" data-country="HU" data-rate="1.5">
-											<img src="assets/img/flags/HU.png" alt="Hungary" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Hungary (HUF)
-											</span>
-										</button>
-										<button name="Indonesia (IDR)" value="IDR" data-country="ID" data-rate="1.5">
-											<img src="assets/img/flags/ID.png" alt="Indonesia" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Indonesia (IDR)
-											</span>
-										</button>
-										<button name="Ireland (EUR)" value="EUR" data-country="IE" data-rate="1.5">
-											<img src="assets/img/flags/IE.png" alt="Ireland" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Ireland (EUR)
-											</span>
-										</button>
-										<button name="Israel (ILS)" value="ILS" data-country="IL" data-rate="1.5">
-											<img src="assets/img/flags/IL.png" alt="Israel" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Israel (ILS)
-											</span>
-										</button>
-										<button name="Italy (EUR)" value="EUR" data-country="IT" data-rate="1.5">
-											<img src="assets/img/flags/IT.png" alt="Italy" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												Italy (EUR)
-											</span>
-										</button>
-										<button name="Japan (JPY)" value="JPY" data-country="JP" data-rate="1.5">
+										<button name="Japan (JPY)" value="JPY" data-country="JP" data-rate="1">
 											<img src="assets/img/flags/JP.png" alt="Japan" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Japan (JPY)
 											</span>
 										</button>
-										<button name="Kuwait (KWD)" value="KWD" data-country="KW" data-rate="1.5">
+										<button name="USA (USD)" value="USD" data-country="US" data-rate="2">
+											<img src="assets/img/flags/US.png" alt="USA" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												USA (USD)
+											</span>
+										</button>
+										<button name="Aland Islands (EUR)" value="EUR" data-country="AX" data-rate="3">
+											<img src="assets/img/flags/AX.png" alt="Aland Islands" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Aland Islands (EUR)
+											</span>
+										</button>
+										<button name="Andorra (EUR)" value="EUR" data-country="AD" data-rate="4">
+											<img src="assets/img/flags/AD.png" alt="Andorra" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Andorra (EUR)
+											</span>
+										</button>
+										<button name="Austria (EUR)" value="EUR" data-country="AT" data-rate="5">
+											<img src="assets/img/flags/AT.png" alt="Austria" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Austria (EUR)
+											</span>
+										</button>
+										<button name="Belgium (EUR)" value="EUR" data-country="BE" data-rate="6">
+											<img src="assets/img/flags/BE.png" alt="Belgium" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Belgium (EUR)
+											</span>
+										</button>
+										<button name="Brazil (BRL)" value="BRL" data-country="BR" data-rate="7">
+											<img src="assets/img/flags/BR.png" alt="Brazil" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Brazil (BRL)
+											</span>
+										</button>
+										<button name="Brunei Darussalam (BND)" value="BND" data-country="BN" data-rate="8">
+											<img src="assets/img/flags/BN.png" alt="Brunei Darussalam" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Brunei Darussalam (BND)
+											</span>
+										</button>
+										<button name="Canada (CAD)" value="CAD" data-country="CA" data-rate="9">
+											<img src="assets/img/flags/CA.png" alt="Canada" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Canada (CAD)
+											</span>
+										</button>
+										<button name="Chile (CLP)" value="CLP" data-country="CL" data-rate="10">
+											<img src="assets/img/flags/CL.png" alt="Chile" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Chile (CLP)
+											</span>
+										</button>
+										<button name="China (CNY)" value="CNY" data-country="CN" data-rate="11">
+											<img src="assets/img/flags/CN.png" alt="China" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												China (CNY)
+											</span>
+										</button>
+										<button name="Cyprus (EUR)" value="EUR" data-country="CY" data-rate="12">
+											<img src="assets/img/flags/CY.png" alt="Cyprus" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Cyprus (EUR)
+											</span>
+										</button>
+										<button name="Czech Republic (CZK)" value="CZK" data-country="CZ" data-rate="13">
+											<img src="assets/img/flags/CZ.png" alt="Czech Republic" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Czech Republic (CZK)
+											</span>
+										</button>
+										<button name="Denmark (DKK)" value="DKK" data-country="DK" data-rate="14">
+											<img src="assets/img/flags/DK.png" alt="Denmark" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Denmark (DKK)
+											</span>
+										</button>
+										<button name="Estonia (EUR)" value="EUR" data-country="EE" data-rate="14">
+											<img src="assets/img/flags/EE.png" alt="Estonia" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Estonia (EUR)
+											</span>
+										</button>
+										<button name="Fiji (FJD)" value="FJD" data-country="FJ" data-rate="15">
+											<img src="assets/img/flags/FJ.png" alt="Fiji" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Fiji (FJD)
+											</span>
+										</button>
+										<button name="Finland (EUR)" value="EUR" data-country="FI" data-rate="16">
+											<img src="assets/img/flags/FI.png" alt="Finland" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Finland (EUR)
+											</span>
+										</button>
+										<button name="France (EUR)" value="EUR" data-country="FR" data-rate="16">
+											<img src="assets/img/flags/FR.png" alt="France" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												France (EUR)
+											</span>
+										</button>
+										<button name="French Polynesia (XPF)" value="XPF" data-country="PF" data-rate="17">
+											<img src="assets/img/flags/PF.png" alt="French Polynesia" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												French Polynesia (XPF)
+											</span>
+										</button>
+										<button name="Germany (EUR)" value="EUR" data-country="DE" data-rate="18">
+											<img src="assets/img/flags/DE.png" alt="Germany" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Germany (EUR)
+											</span>
+										</button>
+										<button name="Greece (EUR)" value="EUR" data-country="GR" data-rate="19">
+											<img src="assets/img/flags/GR.png" alt="Greece" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Greece (EUR)
+											</span>
+										</button>
+										<button name="Hong Kong (HKD)" value="HKD" data-country="HK" data-rate="20">
+											<img src="assets/img/flags/HK.png" alt="Hong Kong" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Hong Kong (HKD)
+											</span>
+										</button>
+										<button name="Hungary (HUF)" value="HUF" data-country="HU" data-rate="21">
+											<img src="assets/img/flags/HU.png" alt="Hungary" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Hungary (HUF)
+											</span>
+										</button>
+										<button name="Indonesia (IDR)" value="IDR" data-country="ID" data-rate="22">
+											<img src="assets/img/flags/ID.png" alt="Indonesia" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Indonesia (IDR)
+											</span>
+										</button>
+										<button name="Ireland (EUR)" value="EUR" data-country="IE" data-rate="23">
+											<img src="assets/img/flags/IE.png" alt="Ireland" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Ireland (EUR)
+											</span>
+										</button>
+										<button name="Israel (ILS)" value="ILS" data-country="IL" data-rate="24">
+											<img src="assets/img/flags/IL.png" alt="Israel" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Israel (ILS)
+											</span>
+										</button>
+										<button name="Italy (EUR)" value="EUR" data-country="IT" data-rate="25">
+											<img src="assets/img/flags/IT.png" alt="Italy" class="hero__calculator-flag">
+											<span class="hero-dropdown__countryDetails">
+												Italy (EUR)
+											</span>
+										</button>
+										<button name="Kuwait (KWD)" value="KWD" data-country="KW" data-rate="27">
 											<img src="assets/img/flags/KW.png" alt="Kuwait" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Kuwait (KWD)
 											</span>
 										</button>
-										<button name="Luxembourg (EUR)" value="EUR" data-country="LU" data-rate="1.5">
+										<button name="Luxembourg (EUR)" value="EUR" data-country="LU" data-rate="28">
 											<img src="assets/img/flags/LU.png" alt="Luxembourg" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Luxembourg (EUR)
 											</span>
 										</button>
-										<button name="Malaysia (MYR)" value="MYR" data-country="MY" data-rate="1.5">
+										<button name="Malaysia (MYR)" value="MYR" data-country="MY" data-rate="29">
 											<img src="assets/img/flags/MY.png" alt="Malaysia" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Malaysia (MYR)
 											</span>
 										</button>
-										<button name="Malta (EUR)" value="EUR" data-country="MT" data-rate="1.5">
+										<button name="Malta (EUR)" value="EUR" data-country="MT" data-rate="0.9">
 											<img src="assets/img/flags/MT.png" alt="Malta" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Malta (EUR)
 											</span>
 										</button>
-										<button name="Mauritius (MUR)" value="MUR" data-country="MU" data-rate="1.5">
+										<button name="Mauritius (MUR)" value="MUR" data-country="MU" data-rate="0.8">
 											<img src="assets/img/flags/MU.png" alt="Mauritius" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Mauritius (MUR)
 											</span>
 										</button>
-										<button name="Mexico (MXN)" value="MXN" data-country="MX" data-rate="1.5">
+										<button name="Mexico (MXN)" value="MXN" data-country="MX" data-rate="0.7">
 											<img src="assets/img/flags/MX.png" alt="Mexico" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Mexico (MXN)
 											</span>
 										</button>
-										<button name="Monaco (EUR)" value="EUR" data-country="MC" data-rate="1.5">
+										<button name="Monaco (EUR)" value="EUR" data-country="MC" data-rate="0.6">
 											<img src="assets/img/flags/MC.png" alt="Monaco" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Monaco (EUR)
 											</span>
 										</button>
-										<button name="Montenegro (EUR)" value="EUR" data-country="ME" data-rate="1.5">
+										<button name="Montenegro (EUR)" value="EUR" data-country="ME" data-rate="0.5">
 											<img src="assets/img/flags/ME.png" alt="Montenegro" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Montenegro (EUR)
 											</span>
 										</button>
-										<button name="Netherlands (EUR)" value="EUR" data-country="NL" data-rate="1.5">
+										<button name="Netherlands (EUR)" value="EUR" data-country="NL" data-rate="0.4">
 											<img src="assets/img/flags/NL.png" alt="Netherlands" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Netherlands (EUR)
 											</span>
 										</button>
-										<button name="New Caledonia (XPF)" value="XPF" data-country="NC" data-rate="1.5">
+										<button name="New Caledonia (XPF)" value="XPF" data-country="NC" data-rate="0.3">
 											<img src="assets/img/flags/NC.png" alt="New Caledonia" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												New Caledonia (XPF)
 											</span>
 										</button>
-										<button name="New Zealand (NZD)" value="NZD" data-country="NZ" data-rate="1.5">
+										<button name="New Zealand (NZD)" value="NZD" data-country="NZ" data-rate="0.2">
 											<img src="assets/img/flags/NZ.png" alt="New Zealand" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												New Zealand (NZD)
 											</span>
 										</button>
-										<button name="Norway (NOK)" value="NOK" data-country="NO" data-rate="1.5">
+										<button name="Norway (NOK)" value="NOK" data-country="NO" data-rate="0.1">
 											<img src="assets/img/flags/NO.png" alt="Norway" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Norway (NOK)
 											</span>
 										</button>
-										<button name="Oman (OMR)" value="OMR" data-country="OM" data-rate="1.5">
+										<button name="Oman (OMR)" value="OMR" data-country="OM" data-rate="0.05">
 											<img src="assets/img/flags/OM.png" alt="Oman" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Oman (OMR)
 											</span>
 										</button>
-										<button name="Papua New Guinea (PGK)" value="PGK" data-country="PG" data-rate="1.5">
+										<button name="Papua New Guinea (PGK)" value="PGK" data-country="PG" data-rate="0.005">
 											<img src="assets/img/flags/PG.png" alt="Papua New Guinea" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												Papua New Guinea (PGK)
@@ -819,12 +825,6 @@
 											<img src="assets/img/flags/GB.png" alt="United Kingdom" class="hero__calculator-flag">
 											<span class="hero-dropdown__countryDetails">
 												United Kingdom (GBP)
-											</span>
-										</button>
-										<button name="USA (USD)" value="USD" data-country="US" data-rate="1.5">
-											<img src="assets/img/flags/US.png" alt="USA" class="hero__calculator-flag">
-											<span class="hero-dropdown__countryDetails">
-												USA (USD)
 											</span>
 										</button>
 										<button name="Vanuatu (VUV)" value="VUV" data-country="VU" data-rate="1.5">

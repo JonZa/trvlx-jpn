@@ -355,67 +355,13 @@
 		</div>
 	</div>
 </section>
-<script type="text/javascript" src="assets/js/components/currencyProcessor.js"></script>
-<script type="text/javascript" src="assets/js/components/currencyCalculator.js"></script>
-<script type="text/javascript" src="assets/js/components/currencyDropdown.js"></script>
-<script type="text/javascript" src="assets/js/components/typeAhead.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyProcessor.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyCalculator.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyDropdown.js"></script>
+<script type="text/javascript" src="assets/js/functions/typeAhead.js"></script>
+<script type="text/javascript" src="assets/js/components/dropdown.js"></script>
+<script type="text/javascript" src="assets/js/components/ticker.js"></script>
 <script type="text/javascript" src="assets/js/all.js"></script>
-
-<script>
-	if (typeof currencyCallbacks !== 'object') var currencyCallbacks = [];
-	var dropdownHTML = function() {
-		var $_dropdown = document.getElementById('dropdownHTML');
-		if (!$_dropdown) return false;
-		var html = '';
-		for (var currency in currencies) {
-			var countries = currencies[currency];
-			for (var i = 0; i < countries.length; i++) {
-				var country = countries[i];
-				html += '<button type="button" name="' + country['countryName'] + ' (' + country['currencyCode'] + ')" value="' + country['currencyCode'] + '" data-country="' + country['countryCode'] + '" data-symbol="' + country['currencySymbol'] + '" data-rate="' + country['exchangeRate'] + '" name="' + country['countryName'] + ' ' + country['currencyCode'] + '">';
-				html += '<img src="assets/img/flags/' + country['countryCode'] + '.png" alt="' + country['countryName'] + '" class="hero__calculator-flag">';
-				html += '<span class="hero-dropdown__countryDetails" data-original="' + country['countryName'] + ' (' + country['currencyCode'] + ')">';
-				html += country['countryName'] + ' (' + country['currencyCode'] + ')';
-				html += '</span>';
-				html += '</button>';
-			}
-		}
-		$_dropdown.innerHTML = html;
-	}
-	currencyCallbacks.push(dropdownHTML);
-	currencyCallbacks.push(currencyDropdown.init);
-	currencyCallbacks.push(currencyCalculator.init);
-	var tickerHTML = function() {
-		var $_ticker = document.getElementById('tickerHTML');
-		var html = '';
-		var number = 0;
-		for (var currency in currencies) {
-			var countries = currencies[currency];
-			for (var i = 0; i < countries.length; i++) {
-				if (number%4 === 0) {
-					html += '<input class="carousel__activator" type="radio" name="tickerCarousel"';
-					if (number === 0) html += 'checked'
-					html += '>';
-					html += '<div class="carousel__slide">';
-					html += '<div class="carousel__content">';
-				}
-				var country = countries[i];
-				html += '<a href="#" class="ticker__currency">';
-				html += '<img src="assets/img/flags/' + country['countryCode'] + '.png" alt="" class="ticker__flag">';
-				html += '<small>' + country['countryCode'] + '</small><br>';
-				html += country['exchangeRate'];
-				html += '</a>';
-				if (number+1%4 === 0) {
-					html += '</div>';
-					html += '</div>';
-				}
-				number++;
-			}
-		}
-		$_ticker.innerHTML = html;
-	}
-	currencyCallbacks.push(tickerHTML);
-	currencyCallbacks.push(intervalCheck.setUp);
-</script>
 
 </body>
 </html>

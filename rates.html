@@ -42,7 +42,9 @@
 						<div class="col-12 col-sm-6 col-lg-12">
 							<label class="hero__calculator-label" for="toNumber">に</label>
 							<div class="hero__calculator-input input-group">
-								<div class="input-group-prepend"></div>
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="currency-to__dropdown-prepend">¥</span>
+								</div>
 								<input type="number" class="form-control" id="currency-to__amount" aria-label="に" value="100.00">
 								<label class="input-group-append" id="currency-to__dropdown-label">
 									<img src="assets/img/flags/US.png" alt="" class="hero__calculator-flag">
@@ -192,371 +194,20 @@
 		</div>
 		<div class="rates-search">
 			<div class="input-group">
-				<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency__search">
-				<label for="currency__search" class="input-group-append">
+				<input type="text" autocomplete="off" class="form-control" aria-label="に" id="rates__search">
+				<label for="rates__search" class="input-group-append">
 					<span class="input-group-text"><i class="far fa-search fa-fw"></i></span>
 				</label>
 			</div>
 		</div>
-		<div class="rates-currencies">
-			<button type="button" class="rates-currencies__currency" name="Vitae AU Liqui dbeat">
-				<span class="rates-currencies__country" data-original="Vitae">
-					Vitae
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/AU.png" alt="" class="rates-currencies__flag">
-					AU
-					<br>
-					<span class="rates-currencies__name" data-original="Liqui dbeat">
-						Liqui dbeat
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Odio AX Arumm inusm">
-				<span class="rates-currencies__country" data-original="Odio">
-					Odio
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/AX.png" alt="" class="rates-currencies__flag">
-					AX
-					<br>
-					<span class="rates-currencies__name" data-original="Arumm inusm">
-						Arumm inusm
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Omnis BR Diovo lupta">
-				<span class="rates-currencies__country" data-original="Omnis">
-					Omnis
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/BR.png" alt="" class="rates-currencies__flag">
-					BR
-					<br>
-					<span class="rates-currencies__name" data-original="Diovo lupta">
-						Diovo lupta
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Doloribus CN Acere modim">
-				<span class="rates-currencies__country" data-original="Doloribus">
-					Doloribus
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/CN.png" alt="" class="rates-currencies__flag">
-					CN
-					<br>
-					<span class="rates-currencies__name" data-original="Acere modim">
-						Acere modim
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Molestiae DK Landi tiisr">
-				<span class="rates-currencies__country" data-original="Molestiae">
-					Molestiae
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/DK.png" alt="" class="rates-currencies__flag">
-					DK
-					<br>
-					<span class="rates-currencies__name" data-original="Landi tiisr">
-						Landi tiisr
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Voluptates FI Edali quamm">
-				<span class="rates-currencies__country" data-original="Voluptates">
-					Voluptates
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/FI.png" alt="" class="rates-currencies__flag">
-					FI
-					<br>
-					<span class="rates-currencies__name" data-original="Edali quamm">
-						Edali quamm
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Soluta GF Xcept urire">
-				<span class="rates-currencies__country" data-original="Soluta">
-					Soluta
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/GF.png" alt="" class="rates-currencies__flag">
-					GF
-					<br>
-					<span class="rates-currencies__name" data-original="Xcept urire">
-						Xcept urire
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Ducimus HU Olupt atibu">
-				<span class="rates-currencies__country" data-original="Ducimus">
-					Ducimus
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/HU.png" alt="" class="rates-currencies__flag">
-					HU
-					<br>
-					<span class="rates-currencies__name" data-original="Olupt atibu">
-						Olupt atibu
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Incidunt IT Liqua mdolo">
-				<span class="rates-currencies__country" data-original="Incidunt">
-					Incidunt
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/IT.png" alt="" class="rates-currencies__flag">
-					IT
-					<br>
-					<span class="rates-currencies__name" data-original="Liqua mdolo">
-						Liqua mdolo
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Aspernatur LU Olori busdo">
-				<span class="rates-currencies__country" data-original="Aspernatur">
-					Aspernatur
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/LU.png" alt="" class="rates-currencies__flag">
-					LU
-					<br>
-					<span class="rates-currencies__name" data-original="Olori busdo">
-						Olori busdo
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Cumque MQ Imili queac">
-				<span class="rates-currencies__country" data-original="Cumque">
-					Cumque
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/MQ.png" alt="" class="rates-currencies__flag">
-					MQ
-					<br>
-					<span class="rates-currencies__name" data-original="Imili queac">
-						Imili queac
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Voluptas MY Imili queis">
-				<span class="rates-currencies__country" data-original="Voluptas">
-					Voluptas
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/MY.png" alt="" class="rates-currencies__flag">
-					MY
-					<br>
-					<span class="rates-currencies__name" data-original="Imili queis">
-						Imili queis
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Voluptas NZ Raese ntium">
-				<span class="rates-currencies__country" data-original="Voluptas">
-					Voluptas
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/NZ.png" alt="" class="rates-currencies__flag">
-					NZ
-					<br>
-					<span class="rates-currencies__name" data-original="Raese ntium">
-						Raese ntium
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Veniam PH Intiu stomd">
-				<span class="rates-currencies__country" data-original="Veniam">
-					Veniam
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/PH.png" alt="" class="rates-currencies__flag">
-					PH
-					<br>
-					<span class="rates-currencies__name" data-original="Intiu stomd">
-						Intiu stomd
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Quidem SB Acere quamm">
-				<span class="rates-currencies__country" data-original="Quidem">
-					Quidem
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/SB.png" alt="" class="rates-currencies__flag">
-					SB
-					<br>
-					<span class="rates-currencies__name" data-original="Acere quamm">
-						Acere quamm
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Illo SK Ccusa ntium">
-				<span class="rates-currencies__country" data-original="Illo">
-					Illo
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/SK.png" alt="" class="rates-currencies__flag">
-					SK
-					<br>
-					<span class="rates-currencies__name" data-original="Ccusa ntium">
-						Ccusa ntium
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Accusantium TO Xsint ntium">
-				<span class="rates-currencies__country" data-original="Accusantium">
-					Accusantium
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/TO.png" alt="" class="rates-currencies__flag">
-					TO
-					<br>
-					<span class="rates-currencies__name" data-original="Xsint ntium">
-						Xsint ntium
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Beatae VA Ccusa musis">
-				<span class="rates-currencies__country" data-original="Beatae">
-					Beatae
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/VA.png" alt="" class="rates-currencies__flag">
-					VA
-					<br>
-					<span class="rates-currencies__name" data-original="Ccusa musis">
-						Ccusa musis
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Deleniti YT Ligen diseq">
-				<span class="rates-currencies__country" data-original="Deleniti">
-					Deleniti
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/YT.png" alt="" class="rates-currencies__flag">
-					YT
-					<br>
-					<span class="rates-currencies__name" data-original="Ligen diseq">
-						Ligen diseq
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-			<button type="button" class="rates-currencies__currency" name="Magni ZA Ullaa dipis">
-				<span class="rates-currencies__country" data-original="Magni">
-					Magni
-				</span>
-				<div class="rates-currencies__info">
-					<img src="assets/img/flags/ZA.png" alt="" class="rates-currencies__flag">
-					ZA
-					<br>
-					<span class="rates-currencies__name" data-original="Ullaa dipis">
-						Ullaa dipis
-					</span>
-					<br>
-					<span class="rates-currencies__rate">
-						0.0090
-					</span>
-				</div>
-			</button>
-		</div>
+		<div class="rates-currencies" id="ratesHTML"></div>
 		<div class="text-center">
 			<button class="btn btn-outline-crimson">詳細</button>
 		</div>
 	</div>
 </section>
 <script>
-	var $_search = document.getElementById('currency__search');
-	var $_currencies = document.querySelectorAll('.rates-currencies__currency');
-	$_search.addEventListener('input', function() {
-		typeAhead.filter(
-			{
-				input: $_search,
-				targets: $_currencies
-			}
-		);
-		// currencyDropdown.toggleIcon($_dropdowns);
-	});
+
 </script><hr class="divider "><section class="blocks">
 	<div class="container-fluid">
 		<div class="row blocks__grid">
@@ -687,10 +338,12 @@
 		</div>
 	</div>
 </section>
-<script type="text/javascript" src="assets/js/components/currencyProcessor.js"></script>
-<script type="text/javascript" src="assets/js/components/currencyCalculator.js"></script>
-<script type="text/javascript" src="assets/js/components/currencyDropdown.js"></script>
-<script type="text/javascript" src="assets/js/components/typeAhead.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyProcessor.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyCalculator.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyDropdown.js"></script>
+<script type="text/javascript" src="assets/js/functions/typeAhead.js"></script>
+<script type="text/javascript" src="assets/js/components/dropdown.js"></script>
+<script type="text/javascript" src="assets/js/components/rates.js"></script>
 <script type="text/javascript" src="assets/js/all.js"></script>
 
 </body>

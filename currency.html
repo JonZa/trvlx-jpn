@@ -42,7 +42,9 @@
 						<div class="col-12 col-sm-6 col-lg-12">
 							<label class="hero__calculator-label" for="toNumber">に</label>
 							<div class="hero__calculator-input input-group">
-								<div class="input-group-prepend"></div>
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="currency-to__dropdown-prepend">¥</span>
+								</div>
 								<input type="number" class="form-control" id="currency-to__amount" aria-label="に" value="100.00">
 								<label class="input-group-append" id="currency-to__dropdown-label">
 									<img src="assets/img/flags/US.png" alt="" class="hero__calculator-flag">
@@ -520,10 +522,11 @@
 		</div>
 	</div>
 </section>
-<script type="text/javascript" src="assets/js/components/currencyProcessor.js"></script>
-<script type="text/javascript" src="assets/js/components/currencyCalculator.js"></script>
-<script type="text/javascript" src="assets/js/components/currencyDropdown.js"></script>
-<script type="text/javascript" src="assets/js/components/typeAhead.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyProcessor.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyCalculator.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyDropdown.js"></script>
+<script type="text/javascript" src="assets/js/functions/typeAhead.js"></script>
+<script type="text/javascript" src="assets/js/components/dropdown.js"></script>
 <script type="text/javascript" src="assets/js/all.js"></script>
 
 </body>

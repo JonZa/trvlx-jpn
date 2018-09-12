@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="Travelex">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=rM30rJxA9X">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+	<title>Rates - Travelex</title>
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+
+<section class="hero hero--calculator">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="hero__forex col-lg-5">
+				<div class="hero__headline d-lg-none">
+					<h1>
+						オンラインで外貨購入<br>
+						<small>ご自宅・職場へ宅配店舗で戸『取りもOK! 便利な外貨宅配サービスを是非ご申」用ください</small>
+					</h1>
+				</div>
+				<form class="hero__calculator">
+					<div class="row">
+						<div class="col-12 col-sm-6 col-lg-12">
+							<label class="hero__calculator-label" for="fromNumber">外貨両替自動計算</label>
+							<div class="hero__calculator-input input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">¥</span>
+								</div>
+								<input type="number" class="form-control" id="currency-from__amount" aria-label="に" value="100000.00">
+								<label class="input-group-append inactive" id="currency-from__dropdown-label">
+									<img src="assets/img/flags/JP.png" alt="" class="hero__calculator-flag">
+									<span class="input-group-text">JPY</span>
+								</label>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-12">
+							<label class="hero__calculator-label" for="toNumber">に</label>
+							<div class="hero__calculator-input input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="currency-to__dropdown-prepend">¥</span>
+								</div>
+								<input type="number" class="form-control" id="currency-to__amount" aria-label="に" value="100.00">
+								<label class="input-group-append" id="currency-to__dropdown-label">
+									<img src="assets/img/flags/US.png" alt="" class="hero__calculator-flag">
+									<span class="input-group-text">USD</span>
+								</label>
+							</div>
+							<div class="squeezer" id="currency-to__list">
+								<div class="hero__calculator-dropdown">
+									<div class="input-group">
+										<input type="text" autocomplete="off" class="form-control" aria-label="に" id="currency-to">
+										<label for="currency-to" class="input-group-append" for="currency-to">
+											<span class="input-group-text"><i class="icon-search icon-fw"></i></span>
+										</label>
+									</div>
+									<div class="hero__calculator-currencies" id="dropdownHTML"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						オンラインレート: 1 USD = 120JPY
+						<small>
+							両替レート最終更新日 2018年 7月 20日 金曜日 10:34:23 日本標準時
+						</small>
+					</div>
+					<button type="submit" class="btn btn-crimson btn-block btn-lg">
+						購入手続きを行う
+					</button>
+				</form>
+				<div class="hero__credentials d-none d-lg-flex">
+					<div>
+						<img src="assets/img/logo__canstar.png" alt=""><br>
+						<em>¡</em>写すよ北蓄写どぎ住決ホネ
+					</div>
+					<div>
+						<img src="assets/img/logo__canstar.png" alt=""><br>
+						<em>¡</em>ルタスヌ基正ぽ真済ミソ議確みぼ
+					</div>
+					<div>
+						<img src="assets/img/logo__canstar.png" alt=""><br>
+						<em>¡</em>セス迎車敗つわ性断ソケルヲ率響5案
+					</div>
+				</div>
+			</div>
+			<div class="hero__carousel d-none d-lg-block col-lg-7">
+				<div class="carousel__container">
+					<div class="carousel">
+						<input class="carousel__activator" type="radio" id="heroCarouselA" name="heroCarousel" checked>
+						<div class="carousel__slide" style="background-image: url(assets/img/stock/hero__stock-1.jpg);">
+							<a href="#" class="carousel__content">
+								<h1>
+									オンライン<br>
+									で外貨購入
+								</h1>
+								<p>
+									ご自宅・職場へ宅配<br>
+									店舗で戸『取りもOK!<br>
+									便利な外貨宅配サービスを是非ご申」用ください
+								</p>
+							</a>
+						</div>
+						<input class="carousel__activator" type="radio" id="heroCarouselB" name="heroCarousel">
+						<div class="carousel__slide" style="background-image: url(assets/img/stock/hero__stock-2.jpg);">
+							<a href="#" class="carousel__content">
+								<h2>
+									<em>¡</em>称づすきぞ自玲<br>
+									氏がゅ力経づろ夢速ワ
+								</h2>
+								<p>
+									<em>¡</em>統青開掲ばッむけ市様す難交型ヒネノ買圧ごえへち<br>
+									弾反ネ今研ざ耳会濤ネ代紋クふがょ明過クヨ<br>
+									氏がゅ力経づろ夢速ワマエ済司ぴごで
+								</p>
+							</a>
+						</div>
+						<input class="carousel__activator" type="radio" id="heroCarouselC" name="heroCarousel">
+						<div class="carousel__slide" style="background-image: url(assets/img/stock/hero__stock-3.jpg);">
+							<a href="#" class="carousel__content">
+								<h2>
+									<em>¡</em>型ミコホ北供サエ時ホタニレ庁<br>
+									弾反ネ今研
+								</h2>
+								<p>
+									<em>¡</em>弾反ネ今研ざ耳会濤ネ代紋クふがょ明過クヨ<br>
+									記オメ給5報ホライセ情投ユコヨ賀公ぴおゅょ住18豊リメ殺込川テ率<br>
+									験文る煙病ねい裁択エフ
+								</p>
+							</a>
+						</div>
+						<input class="carousel__activator" type="radio" id="heroCarouselD" name="heroCarousel">
+						<div class="carousel__slide" style="background-image: url(assets/img/stock/hero__stock-4.jpg);">
+							<a href="#" class="carousel__content">
+								<h2>
+									<em>¡</em>ネ田記やイひな四<br>
+									弾反ネ今研
+								</h2>
+								<p>
+									<em>¡</em>青丁いてつぜ<br>
+									17回ゅンぴ努音ンちつ性今務聞てぐし中よきば架型掛焼詐ンふさ<br>
+									弾反ネ今研ざ耳会濤ネ代紋クふがょ明過クヨ
+								</p>
+							</a>
+						</div>
+						<div class="carousel__indicators">
+							<label class="carousel__indicator" for="heroCarouselA"></label>
+							<label class="carousel__indicator" for="heroCarouselB"></label>
+							<label class="carousel__indicator" for="heroCarouselC"></label>
+							<label class="carousel__indicator" for="heroCarouselD"></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="copy">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-9 mx-auto text-center">
+				<h2>無こ目放ずつれド改投</h2>
+				<p>
+					守とをフ済骨ルヌノサ表座ゆ来説睦あぽ約用市任6紙いを住爆ゃまち舞委メヨテ局登レチヱ島算たずっ機質40択ぶリ。協ヤナ組低コホスヱ味海トチヲナ米口物シノコハ調34空コス海細語ー程回ンごやょ生孫ワトヱ面特モケ聞倶むづじど生父の。精レお先陸特トラ直続きへ程解で加以ぐみずい立9申をイル的挑マハヲ提島クヱ料決へべぎ住手ホス要事ク野理サ政宣獲も。
+				</p>
+				<p>
+					表メノム告脚リヲユ盛精ぴイドよ効世求米メ旅曇トオラ上情つき明向ヨラノキ応昨促タイ平拒名治かしそ本適っ無想けざフ拍市連をの家選にせゃ柏興鉄索ゆ。顔ぽひあル一話小じ営住セク規囲ワロム球運サナヌマ両37及ヒエノ県細ヱスタエ組更口づ合転チ図匿へっひ恐太欺ひでん。二トフせ続迎きい今賞ラワフリ泣能たな温被せへイ編質どせが送円フヤテ価復ユヨサロ分血換へぞ情56奈雑盾8葉リか公因床鋭種ぐかほま。
+				</p>
+				<p>
+					1関鞭白トサ囲日テ要検クリヌテ有政づちょ不政ごぞゅも聞村画れっぐこ転調あてよろ乗熊ずりぐ院題げな長大べク権出タネオイ層氏だじぱ。派球さ覧渋ケ確6下シウメ鯨正ソセナ増文しッ円融ゆ固法ノヲエセ思利ト意局ごび賞賀ちレれラ質以65法旧たゆん真向作旨っ。主くかクど禁院ノヌホヨ身者でにぴき相行セマニモ改悲カ載厚3月ぞぜトね右市お羽君ロホムツ見与ルソヤ言6性ぶんき更時題述ルテ後謙ゃあ。
+				</p>
+				<p>
+					立ラフ明載スにもよ回好んほ監京者レクメ週会来ぴ当張ぎやほ下動ラ拓必でと気更コ検直リコラメ放投のへッ並財キト断経ぱもご転平テメセハ世経ヱオ浅助ニクメ小61束事倉徹ふうす。最陽報げでスフ職千テラリ館訳ぱくぞ元堀かクしゆ調期ウヤイ覧小は事分スル季森レリセツ選事りす芸病謙ヱ見6初業っね考28他ちぐけ瞬読スルエ査融冷勧こせはが。
+				</p>
+			</div>
+		</div>
+	</div>
+</section><section class="rates">
+	<div class="container-fluid">
+		<div class="rates-result">
+			<div class="rates-result__exchange">
+				オンラインレート: ¥1 JPY =
+				<span class="rates-result__deal">
+					$200
+				</span>
+			</div>
+			<div class="rates-result__info">
+				両替レート最終更新日 2018年 7月 20日 金曜日 10:34:23 日本標準時
+			</div>
+		</div>
+		<div class="rates-search">
+			<div class="input-group">
+				<input type="text" autocomplete="off" class="form-control" aria-label="に" id="rates__search">
+				<label for="rates__search" class="input-group-append">
+					<span class="input-group-text"><i class="icon-search icon-fw"></i></span>
+				</label>
+			</div>
+		</div>
+		<div class="rates-currencies" id="ratesHTML"></div>
+		<div class="text-center">
+			<button class="btn btn-outline-crimson">詳細</button>
+		</div>
+	</div>
+</section>
+<script>
+
+</script><hr class="divider "><section class="blocks">
+	<div class="container-fluid">
+		<div class="row blocks__grid">
+			<a href="#" class="blocks__block bg-port col-12 col-sm-6 col-lg-4 order-sm-1 order-lg-1 d-none d-sm-block">
+				<div class="blocks__content">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28" class="fill-white"><path d="M17.719 16.797C16.938 19.313 14.641 21 12 21s-4.937-1.687-5.719-4.203c-.172-.531.125-1.078.656-1.25.516-.172 1.078.125 1.25.656C8.703 17.875 10.25 19 12 19s3.297-1.125 3.813-2.797a1.006 1.006 0 0 1 1.266-.656.994.994 0 0 1 .641 1.25zM10 10c0 1.109-.891 2-2 2s-2-.891-2-2 .891-2 2-2 2 .891 2 2zm8 0c0 1.109-.891 2-2 2s-2-.891-2-2 .891-2 2-2 2 .891 2 2zm4 4c0-5.516-4.484-10-10-10S2 8.484 2 14s4.484 10 10 10 10-4.484 10-10zm2 0c0 6.625-5.375 12-12 12S0 20.625 0 14 5.375 2 12 2s12 5.375 12 12z"></path></svg>
+					<h3>お知らせ</h3>
+					<p><em>¡</em>夜ス豊建の字性詳南ずそイ室36斉ニユ辞戦せわう政暮ソスワ訟見きなばぼ税記レメ優選にほや党社ムクセユ間権ユクチレ災漁コア禁紀わもラょ健15強が。暮面ルタスヌ基正ぽ真済ミソ議確みぼ。</p>
+					<span class="btn btn-port">詳細</span>
+				</div>
+			</a>
+			<a href="#" class="blocks__block col-12 col-sm-6 col-lg-4 order-sm-2 order-lg-2">
+				<div class="blocks__content">
+					<h3>外貨買取優遇レートサービス</h3>
+					<p>渡航先で使い残した外貨を優遇レートでお買取いたします。</p>
+					<p>ただし渡航前外貨購入時に所定の費用を申し受けます</p>
+					<span class="btn btn-crimson">オンラインで申込む</span>
+				</div>
+			</a>
+			<div href="#" class="blocks__block bg-stock col-12 col-sm-6 col-lg-4 order-sm-4 order-lg-3 d-none d-sm-block" style="background-image: url(assets/img/stock/blocks__stock-1.jpg);"></div>
+			<a href="#" class="blocks__block col-12 col-sm-6 col-lg-4 order-sm-3 order-lg-4">
+				<div class="blocks__content">
+					<h3>海外専用プリペイドカード「キャッシュパスポート」</h3>
+					<p>渡航先でご利用になる金額をプリペイドカードに入金いただき、現地でお支払いに、ＡＴＭからのお引き出しにご利用いただけます。</p>
+					<span class="btn btn-crimson">詳細はこちらから</span>
+				</div>
+			</a>
+			<div href="#" class="blocks__block bg-stock col-12 col-sm-6 col-lg-4 order-sm-5 order-lg-5" style="background-image: url(assets/img/stock/blocks__stock-2.jpg);"></div>
+			<a href="#" class="blocks__block bg-cerulean col-12 col-sm-6 col-lg-4 order-sm-6 order-lg-6 d-none d-sm-block">
+				<div class="blocks__content">
+					<h3>トラベレックスリワードプログラム</h3>
+					<p>年会費・入会金無料！即日レート割引を適用いたします。</p>
+					<span class="btn btn-cerulean">外貨を選択</span>
+				</div>
+			</a>
+		</div>
+	</div>
+</section><hr class="divider "><section class="faq">
+	<div class="container-fluid">
+		<h2 class="text-center">Help &amp; FAQ</h2>
+		<p class="lead">
+			Common questions
+		</p>
+		<div class="faq__question">
+			<input type="checkbox" id="faq1">
+			<label for="faq1">
+				If I choose home delivery, when will I receive my order?
+			</label>
+			<div class="faq__answer">
+				If you choose to pay by credit card you will receive your order within 3 working days. An extra day is required when choosing to pay via BPAY.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq2">
+			<label for="faq2">
+				When can I pick up my order from a store or airport?
+			</label>
+			<div class="faq__answer">
+				If paying by credit card, you can collect it from a store in 3 working days or at an airport the next day. If paying by BPAY you’ll be able to pick it up within 4 working days from a store, or 3 working days from an airport.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq3">
+			<label for="faq3">
+				I need foreign cash ASAP – what’s my best option?
+			</label>
+			<div class="faq__answer">
+				Pay by credit card and collect at airport the very next day (with the exception of Sydney airport). If you’re in in Sydney the quickest option is to order by credit card and you’ll receive your order, or be able to collect it within 3 working days.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq4">
+			<label for="faq4">
+				How do I get alerted when the rates are on offer?
+			</label>
+			<div class="faq__answer">
+				Sign up to our mailing list and get notified when we are having rate sales and promotions.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq5">
+			<label for="faq5">
+				How long will it take for my payment to go through?
+			</label>
+			<div class="faq__answer">
+				If paying by credit card it’s immediate, if using BPAY it usually takes 24 hours.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq6">
+			<label for="faq6">
+				Can I send someone else to collect my order?
+			</label>
+			<div class="faq__answer">
+				No, the person who puts in the order will have to collect it. This is the same for online orders; whoever puts the order in will need to be the one to receive it.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq7">
+			<label for="faq7">
+				What do I need to take/have on me to be able to collect my order?
+			</label>
+			<div class="faq__answer">
+				You will need to take the ID which you used during the ordering process, as well as your order reference number.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq8">
+			<label for="faq8">
+				Do I need to be at home to collect my home delivery?
+			</label>
+			<div class="faq__answer">
+				Yes you will need to be at home.
+			</div>
+		</div>
+		<div class="faq__question">
+			<input type="checkbox" id="faq9">
+			<label for="faq9">
+				What surcharge will apply to my transaction if I use a card to pay for my order?
+			</label>
+			<div class="faq__answer">
+				<ul>
+					<li>Mastercard Debit – 0.77%</li>
+					<li>Visa Debit – 0.72%</li>
+					<li>Visa Credit – 1.00%</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="assets/js/all.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyProcessor.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyCalculator.js"></script>
+<script type="text/javascript" src="assets/js/functions/currencyDropdown.js"></script>
+<script type="text/javascript" src="assets/js/functions/typeAhead.js"></script>
+<script type="text/javascript" src="assets/js/components/dropdown.js"></script>
+<script type="text/javascript" src="assets/js/components/rates.js"></script>
+
+</body>
+</html>

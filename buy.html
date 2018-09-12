@@ -45,10 +45,8 @@
 								<div class="input-group-prepend">
 									<span class="input-group-text" id="currency-to__dropdown-prepend">¥</span>
 								</div>
-								<input type="number" class="form-control" id="currency-to__amount" aria-label="に" value="100.00">
+								<input type="number" class="form-control" id="currency-to__amount" aria-label="に" step="0.01" value="100000">
 								<label class="input-group-append" id="currency-to__dropdown-label">
-									<img src="assets/img/flags/US.png" alt="" class="hero__calculator-flag">
-									<span class="input-group-text">USD</span>
 								</label>
 							</div>
 							<div class="squeezer" id="currency-to__list">
@@ -65,9 +63,13 @@
 						</div>
 					</div>
 					<div class="form-group">
-						オンラインレート: 1 USD = 120JPY
+						オンラインレート: 100JPY = 
+						<span class="hero-calculator__rate">
+							100JPY
+						</span>
 						<small>
-							両替レート最終更新日 2018年 7月 20日 金曜日 10:34:23 日本標準時
+							終更新日
+							<span class="hero-calculator__date"></span>
 						</small>
 					</div>
 					<button type="submit" class="btn btn-crimson btn-block btn-lg">
@@ -231,18 +233,19 @@
 	<div class="container-fluid">
 		<div class="rates-result">
 			<div class="rates-result__exchange">
-				オンラインレート: ¥1 JPY =
-				<span class="rates-result__deal">
-					$200
+				オンラインレート: 100JPY = 
+				<span class="rates-result__rate">
+					100JPY
 				</span>
 			</div>
 			<div class="rates-result__info">
-				両替レート最終更新日 2018年 7月 20日 金曜日 10:34:23 日本標準時
+					終更新日
+					<span class="rates-result__date"></span>
 			</div>
 		</div>
 		<div class="rates-search">
 			<div class="input-group">
-				<input type="text" autocomplete="off" class="form-control" aria-label="に" id="rates__search">
+				<input type="text" autocomplete="off" class="form-control" aria-label="に" id="rates__search" placeholder="渡航先国、通貨名、通貨コードを入力してください。">
 				<label for="rates__search" class="input-group-append">
 					<span class="input-group-text"><i class="icon-search icon-fw"></i></span>
 				</label>
@@ -253,10 +256,7 @@
 			<button class="btn btn-outline-crimson">詳細</button>
 		</div>
 	</div>
-</section>
-<script>
-
-</script><hr class="divider "><section class="how-to">
+</section><hr class="divider "><section class="how-to">
 	<div class="container-fluid">
 		<h2 class="text-center">
 			お知らせ扱いについ
